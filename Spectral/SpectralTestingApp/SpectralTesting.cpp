@@ -6,11 +6,11 @@ using namespace std;
 
 int main()
 {
-	double a = 7.4;
-	int b = 99;
+	double n = 10;
+	double m = 2;
 
-	cout << "a + b = " <<
-		Spectral::SpectralMethods::chebdif(a, b) << endl;
+	cout << "chebdif(" << n << ", " << m  << ")= " <<
+		Spectral::SpectralMethods::chebdif(n, m) << endl;
 	
 	return 0;
 }

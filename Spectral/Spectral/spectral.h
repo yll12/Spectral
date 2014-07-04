@@ -7,6 +7,6 @@ namespace Spectral
 		// TODO: RETURN WHAT IS REQUIRED
 
 		// Returns a + b
-		static double chebdif(double a, double b);
+		static double chebdif(int n, int m);
 	};
 }
