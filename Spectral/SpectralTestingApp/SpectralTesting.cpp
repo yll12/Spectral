@@ -1,15 +1,16 @@
 #include <iostream>
-
+#include <Eigen/Dense>
 #include "spectral.h" 
 
 using namespace std;
+using namespace Eigen;
 
 int main()
 {
-	double n = 10;
-	double m = 2;
+	int n = 10;
+	int m = 2;
 
-	cout << "chebdif(" << n << ", " << m  << ")= " <<
+	cout << "chebdif(" << n << ", " << m  << ")= " << 
 		Spectral::SpectralMethods::chebdif(n, m) << endl;
 	
 	return 0;

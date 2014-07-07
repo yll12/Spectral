@@ -52,17 +52,69 @@ namespace Spectral
 
 		MatrixXd dx(n, n);
 
-		dx = (t_transpose + t);
+		dx = (2 * (t_transpose + t).unaryExpr(ptr_fun(sin))).cwiseProduct((t_transpose - t).unaryExpr(ptr_fun(sin)));
 
-		cout << "Here's the matrix dx: \n" << dx << "\n";
+		dx += MatrixXd::Identity(n, n);
 
-		dx = dx.sin();
+		MatrixXd h(n, 1);
 
-		//dx = 2 * (t_transpose + t).sin().cwiseProduct((t_transpose - t).sin());
+		h.fill(-1);
 
-		cout << "Here's the matrix dx: \n" << dx << "\n";
+		for (int i = 0; i < n; i++)
+		{
+			h(i, 0) = pow(h(i, 0), i);
+		}
+		
+		MatrixXd c(n, n);
+
+		for (int i = 0; i < n; i++)
+		{
+			for (int j = 0; j < n; j++)
+			{
+				c(i, j) = h(abs(i - j));
+			}
+
+		}
+
+		c.row(0) *= 2;
+		c.row(n-1) *= 2;
+		c.col(0) /= 2;
+		c.col(n-1) /= 2;
+
+		MatrixXd z(n, n);
+
+		z = dx.cwiseInverse();
+
+		z -= MatrixXd::Identity(n, n);
+
+		MatrixXd d = MatrixXd::Identity(n, n);
+
+		MatrixXd *dm = new MatrixXd[m];
+		for (int i = 0; i < m; i++){
+			dm[i] = MatrixXd::Zero(n, n);
+		}
+
+		for (int i = 0; i < m; i++)
+		{ 
+			MatrixXd j = c.cwiseProduct(d.diagonal().replicate(1, n)) - d;
+			d = (i + 1) * z.cwiseProduct(j);
+			MatrixXd x = (-(d.transpose().colwise().sum()));
+			for (int j = 0; j < n; j++)
+			{
+				d(j, j) = x(0, j);
+			}
+			dm[i] = d;
+		}
+
+		for (int i = 0; i < m; i++)
+		{
+			cout << "Here's the matrix dm[" << i << "]: \n" << dm[i] << "\n";
+		}
+
+		delete[] dm;
 
 		return n + m;
+
 	}
 
 }
