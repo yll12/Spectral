@@ -1,0 +1,54 @@
+\hypertarget{class_spectral_1_1_spectral_methods}{\section{Spectral\+:\+:Spectral\+Methods Class Reference}
+\label{class_spectral_1_1_spectral_methods}\index{Spectral\+::\+Spectral\+Methods@{Spectral\+::\+Spectral\+Methods}}
+}
+
+
+Spectral Methods class.  
+
+
+
+
+{\ttfamily \#include $<$spectral.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_derivative_matrix}{Derivative\+Matrix} \hyperlink{class_spectral_1_1_spectral_methods_a1c2800845d57211683882cdfad0660e2}{chebdif} (int n, int m)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Spectral Methods class. 
+
+Provides various numerical routines. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_spectral_1_1_spectral_methods_a1c2800845d57211683882cdfad0660e2}{\index{Spectral\+::\+Spectral\+Methods@{Spectral\+::\+Spectral\+Methods}!chebdif@{chebdif}}
+\index{chebdif@{chebdif}!Spectral\+::\+Spectral\+Methods@{Spectral\+::\+Spectral\+Methods}}
+\subsubsection[{chebdif}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Derivative\+Matrix} Spectral\+::\+Spectral\+Methods\+::chebdif (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{int}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_spectral_1_1_spectral_methods_a1c2800845d57211683882cdfad0660e2}
+A static method that computes the differentiation matrices D1, D2, ..., D\+M on Chebyshev nodes. ~\newline
+The code implements two strategies for enhanced accuracy suggested by W.\+Don and S.\+Solomonoff in S\+I\+A\+M J.\+Sci.\+Comp.\+Vol. 6, pp. 1253--1268 (1994). The two strategies are(a) the use of trigonometric identities to avoid the computation of differences x(k) -\/ x(j) and(b) the use of the \char`\"{}flipping trick\char`\"{} which is necessary since sin t can be computed to high relative precision when t is small whereas sin(pi -\/ t) cannot. ~\newline
+ J.\+A.\+C.\+Weideman, S.\+C.\+Reddy 1998.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Size of differentiation matrix. \\
+\hline
+{\em m} & Number of derivatives required (integer). ~\newline
+ Note\+: 0 $<$ m $<$= n-\/1. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+dm\mbox{[}ell\mbox{]} contains ell-\/th derivative matrix, ell=1..m. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Spectral/spectral.\+h\item 
+Spectral/spectral.\+cpp\end{DoxyCompactItemize}

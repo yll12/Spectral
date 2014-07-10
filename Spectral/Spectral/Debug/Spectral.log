@@ -1,11 +1,15 @@
-﻿Build started 07/07/2014 14:53:18.
+﻿Build started 10/07/2014 16:41:03.
      1>Project "D:\Spectral\Spectral\Spectral\Spectral.vcxproj" on node 2 (Build target(s)).
-     1>Lib:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"D:\Spectral\Spectral\Debug\Spectral.lib" /NOLOGO Debug\spectral.obj
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\Spectral\Spectral\Spectral\eigen-eigen-6b38706d90a9\eigen-eigen-6b38706d90a9" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt utility.cpp
+         utility.cpp
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"D:\Spectral\Spectral\Debug\Spectral.lib" /NOLOGO Debug\utility.obj
+         Debug\spectral.obj
          Debug\testing.obj
          Spectral.vcxproj -> D:\Spectral\Spectral\Debug\Spectral.lib
      1>Done Building Project "D:\Spectral\Spectral\Spectral\Spectral.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.51
+Time Elapsed 00:00:01.91

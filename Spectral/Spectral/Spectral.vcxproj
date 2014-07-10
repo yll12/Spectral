@@ -77,10 +77,13 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="derivativeMatrix.h" />
+    <ClInclude Include="utility.h" />
     <ClInclude Include="spectral.h" />
     <ClInclude Include="testing.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="utility.cpp" />
     <ClCompile Include="spectral.cpp" />
     <ClCompile Include="testing.cpp" />
   </ItemGroup>

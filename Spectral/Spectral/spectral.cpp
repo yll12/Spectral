@@ -2,7 +2,6 @@
 #include <cmath>
 
 #include "spectral.h"
-
 #include <stdexcept>
 #include <iostream>
 #include <Eigen/Dense>
@@ -13,51 +12,42 @@ using namespace Eigen;
 
 namespace Spectral
 {
-	double SpectralMethods::chebdif(int n, int m)
+	DerivativeMatrix SpectralMethods::chebdif(int n, int m)
 	{
 
-		MatrixXd i = MatrixXd::Identity(n, n);
+		MatrixXd i = MatrixXd::Identity(n, n); // Identity Matrix i.
 
-		double n1 = floor(n * (1.0 / 2.0));
+		long double n1 = floor(n / 2.0); // Indices used for flipping trick.
+		long double n2 = ceil(n  / 2.0);
 
-		double n2 = ceil(n * (1.0 / 2.0));
-
-		MatrixXd k(n, 1);
+		MatrixXd th(n, 1); // Compute theta vector.
 
 		for (int i = 0; i < n; i++)
 		{
-			k(i, 0) = i;
+		    th(i, 0) = i * M_PI / (n - 1);
 		}
 
-		MatrixXd th(n, 1);
+		MatrixXd x(n, 1); // Compute Chebyshev points.
 
-		th = k * M_PI / (n - 1);
-
-		MatrixXd x(n - 1, 1);
-
-		int index = 0;
-		for (int i = n - 1; i > 1-n; i-=2)
+		for (int index = 0, i = n - 1; i >= 1 - n; index++, i -= 2)
 		{
 			x(index, 0) = sin(M_PI * i / (2 * (n - 1)));
-			index++;
 		}
 
 		MatrixXd t(n, n);
-		MatrixXd th_temp(n, 1);
-		th_temp = th / 2;
-		t = th_temp.replicate(1, n);
+		t = (th / 2).replicate(1, n);
 
 		MatrixXd t_transpose(n, n);
 		t_transpose = t.transpose();
 
 		MatrixXd dx(n, n);
-
+		// Trigonometric identity, and the flipping trick.
 		dx = (2 * (t_transpose + t).unaryExpr(ptr_fun(sin))).cwiseProduct((t_transpose - t).unaryExpr(ptr_fun(sin)));
 
+		// Put 1's on the main diagonal of dx.
 		dx += MatrixXd::Identity(n, n);
 
 		MatrixXd h(n, 1);
-
 		h.fill(-1);
 
 		for (int i = 0; i < n; i++)
@@ -65,8 +55,7 @@ namespace Spectral
 			h(i, 0) = pow(h(i, 0), i);
 		}
 		
-		MatrixXd c(n, n);
-
+		MatrixXd c(n, n); // C is the matrix with entries c(k) / c(j)
 		for (int i = 0; i < n; i++)
 		{
 			for (int j = 0; j < n; j++)
@@ -81,39 +70,37 @@ namespace Spectral
 		c.col(0) /= 2;
 		c.col(n-1) /= 2;
 
-		MatrixXd z(n, n);
-
+		MatrixXd z(n, n); // Z contains entries 1 / (x(k) - x(j)) with zeros on the diagonal.
 		z = dx.cwiseInverse();
 
 		z -= MatrixXd::Identity(n, n);
 
-		MatrixXd d = MatrixXd::Identity(n, n);
-
-		MatrixXd *dm = new MatrixXd[m];
+		MatrixXd d = MatrixXd::Identity(n, n); // D contains diff. matrices.
+		vector<MatrixXd> _dm;
+		_dm.resize(m);
 		for (int i = 0; i < m; i++){
-			dm[i] = MatrixXd::Zero(n, n);
+			_dm[i] = MatrixXd::Zero(n, n);
+			_dm[i].cast<long double>();
 		}
 
 		for (int i = 0; i < m; i++)
 		{ 
 			MatrixXd j = c.cwiseProduct(d.diagonal().replicate(1, n)) - d;
-			d = (i + 1) * z.cwiseProduct(j);
-			MatrixXd x = (-(d.transpose().colwise().sum()));
+			d = (i + 1) * z.cwiseProduct(j); // Off-diagonals.
+			MatrixXd b = (-(d.transpose().colwise().sum()));
 			for (int j = 0; j < n; j++)
 			{
-				d(j, j) = x(0, j);
+				d(j, j) = b(0, j); // Correct main diagonal of D
 			}
-			dm[i] = d;
-		}
+			_dm[i] = d; // Store current D in DM
+		} 
 
-		for (int i = 0; i < m; i++)
-		{
-			cout << "Here's the matrix dm[" << i << "]: \n" << dm[i] << "\n";
-		}
+		DerivativeMatrix result; // Contains both matrix for the differentiation matrices and chebyshev points
 
-		delete[] dm;
+		result.dm = _dm;
+		result.x = x;
 
-		return n + m;
+		return result;
 
 	}
 
