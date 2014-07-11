@@ -1,7 +1,7 @@
 #include <iostream>
-#include <Eigen/Dense>
 #include "spectral.h" 
 #include "utility.h"
+#include <Eigen/Dense>
 #define _CRTDBG_MAP_ALLOC
 #include <stdlib.h>
 #include <crtdbg.h>
@@ -20,7 +20,7 @@ int main()
 	// Check Memory leak
 	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 
-	int n = 10;
+	int n = 5;
 	int m = 2;
 	
 	auto start = chrono::system_clock::now();

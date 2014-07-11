@@ -7,8 +7,16 @@
 #include <Eigen/Dense>
 #include <unsupported/Eigen/MatrixFunctions>
 
+// Delete later
+#include <fstream>
+#include <iomanip>
+#include "utility.h"
+
 using namespace std;
 using namespace Eigen;
+
+// Delete later, for debugging
+using namespace Utility;
 
 namespace Spectral
 {
@@ -17,9 +25,9 @@ namespace Spectral
 
 		MatrixXd i = MatrixXd::Identity(n, n); // Identity Matrix i.
 
-		long double n1 = floor(n / 2.0); // Indices used for flipping trick.
-		long double n2 = ceil(n  / 2.0);
-
+		int n1 = (int) floor(n / 2.0); // Indices used for flipping trick.	
+		int n2 = (int) ceil(n  / 2.0);
+	
 		MatrixXd th(n, 1); // Compute theta vector.
 
 		for (int i = 0; i < n; i++)
@@ -31,7 +39,7 @@ namespace Spectral
 
 		for (int index = 0, i = n - 1; i >= 1 - n; index++, i -= 2)
 		{
-			x(index, 0) = sin(M_PI * i / (2 * (n - 1)));
+			x(index, 0) = sin(M_PI * ((double)i) / (2 * (n - 1)));
 		}
 
 		MatrixXd t(n, n);
@@ -41,8 +49,24 @@ namespace Spectral
 		t_transpose = t.transpose();
 
 		MatrixXd dx(n, n);
-		// Trigonometric identity, and the flipping trick.
-		dx = (2 * (t_transpose + t).unaryExpr(ptr_fun(sin))).cwiseProduct((t_transpose - t).unaryExpr(ptr_fun(sin)));
+
+		// Trigonometric identity.
+		// dx = (2 * (t_transpose + t).unaryExpr(ptr_fun(sin))).cwiseProduct((t_transpose - t).unaryExpr(ptr_fun(sin)));
+		dx = 2 * (t_transpose + t).array().sin().cwiseProduct((t_transpose - t).array().sin());
+
+		// TODO: Flipping trick
+		// DX = [DX(1:n1,:); -flipud(fliplr(DX(1:n2,:)))];
+
+		MatrixXd top(n1, n);
+		top = dx.topRows(n1);
+		MatrixXd bottom(n2, n);
+		bottom = dx.topRows(n2);
+		bottom = bottom.rowwise().reverse().eval();
+		bottom = -bottom.colwise().reverse().eval();
+		dx << top,
+			bottom;
+
+		UtilityMethods::EigenToCSV(dx, "../../dxcpp.csv");
 
 		// Put 1's on the main diagonal of dx.
 		dx += MatrixXd::Identity(n, n);
@@ -50,9 +74,9 @@ namespace Spectral
 		MatrixXd h(n, 1);
 		h.fill(-1);
 
-		for (int i = 0; i < n; i++)
+		for (int i = 0; i < n; i += 2)
 		{
-			h(i, 0) = pow(h(i, 0), i);
+			h(i, 0) = -h(i, 0);
 		}
 		
 		MatrixXd c(n, n); // C is the matrix with entries c(k) / c(j)
@@ -80,7 +104,6 @@ namespace Spectral
 		_dm.resize(m);
 		for (int i = 0; i < m; i++){
 			_dm[i] = MatrixXd::Zero(n, n);
-			_dm[i].cast<long double>();
 		}
 
 		for (int i = 0; i < m; i++)

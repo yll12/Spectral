@@ -19,6 +19,7 @@ namespace Utility
 		if (!of) {
 			cout << "Cannot open file.\n";
 		}
+		cout.setf(ios::fixed);
 		of << setprecision(numeric_limits<double>::digits10 + 2) << x.format(CSVFormat) << endl;
 		of.close();
 	}
