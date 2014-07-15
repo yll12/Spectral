@@ -1,6 +1,3 @@
-#ifndef UTILITY_H_
-#define UTILITY_H_
-
 #include <Eigen/Dense>
 #include <string>
 
@@ -19,8 +16,13 @@ namespace Utility
 		\param filename Filename to be written to.
 		*/
 		static void EigenToCSV(Eigen::MatrixXd& x, std::string filename);
+
+		// TODO: Comment
+		static Eigen::MatrixXd Matlab_fliplr(const Eigen::MatrixXd& x);
+
+		// TODO: Comment
+		static Eigen::MatrixXd Matlab_flipud(const Eigen::MatrixXd& x);
 	};
 
 }
 
-#endif

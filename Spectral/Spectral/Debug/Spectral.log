@@ -1,12 +1,5 @@
-﻿Build started 11/07/2014 16:55:56.
-     1>Project "D:\Spectral\Spectral\Spectral\Spectral.vcxproj" on node 2 (Build target(s)).
-     1>Lib:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"D:\Spectral\Spectral\Debug\Spectral.lib" /NOLOGO Debug\utility.obj
-         Debug\spectral.obj
-         Debug\testing.obj
-         Spectral.vcxproj -> D:\Spectral\Spectral\Debug\Spectral.lib
-     1>Done Building Project "D:\Spectral\Spectral\Spectral\Spectral.vcxproj" (Build target(s)).
-
-Build succeeded.
-
-Time Elapsed 00:00:00.37
+﻿  testing.cpp
+  spectral.cpp
+  utility.cpp
+  Generating Code...
+  Spectral.vcxproj -> D:\Spectral\Spectral\Debug\Spectral.lib

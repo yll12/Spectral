@@ -2,6 +2,7 @@
 #include <cmath>
 
 #include "spectral.h"
+#include "utility.h"
 #include <stdexcept>
 #include <iostream>
 #include <Eigen/Dense>
@@ -10,12 +11,9 @@
 // Delete later
 #include <fstream>
 #include <iomanip>
-#include "utility.h"
 
 using namespace std;
 using namespace Eigen;
-
-// Delete later, for debugging
 using namespace Utility;
 
 namespace Spectral
@@ -39,33 +37,29 @@ namespace Spectral
 
 		for (int index = 0, i = n - 1; i >= 1 - n; index++, i -= 2)
 		{
-			x(index, 0) = sin(M_PI * ((double)i) / (2 * (n - 1)));
+			x(index, 0) = sin(M_PI * i / (2 * (n - 1)));
 		}
 
 		MatrixXd t(n, n);
-		t = (th / 2).replicate(1, n);
+		t = (th / 2.0).replicate(1, n);
+		UtilityMethods::EigenToCSV(t, "../../tcpp.csv");
 
 		MatrixXd t_transpose(n, n);
 		t_transpose = t.transpose();
-
+		UtilityMethods::EigenToCSV(t_transpose, "../../ttransposecpp.csv");
 		MatrixXd dx(n, n);
 
 		// Trigonometric identity.
 		// dx = (2 * (t_transpose + t).unaryExpr(ptr_fun(sin))).cwiseProduct((t_transpose - t).unaryExpr(ptr_fun(sin)));
 		dx = 2 * (t_transpose + t).array().sin().cwiseProduct((t_transpose - t).array().sin());
-
-		// TODO: Flipping trick
+		MatrixXd temp(n, n);
+		temp = (t_transpose - t).unaryExpr(ptr_fun(sin));
+		UtilityMethods::EigenToCSV(temp, "../../tempcpp.csv");
+		
+		// Flipping trick
 		// DX = [DX(1:n1,:); -flipud(fliplr(DX(1:n2,:)))];
-
-		MatrixXd top(n1, n);
-		top = dx.topRows(n1);
-		MatrixXd bottom(n2, n);
-		bottom = dx.topRows(n2);
-		bottom = bottom.rowwise().reverse().eval();
-		bottom = -bottom.colwise().reverse().eval();
-		dx << top,
-			bottom;
-
+		dx << dx.topRows(n1),
+			-UtilityMethods::Matlab_flipud(UtilityMethods::Matlab_fliplr(dx.topRows(n2)));
 		UtilityMethods::EigenToCSV(dx, "../../dxcpp.csv");
 
 		// Put 1's on the main diagonal of dx.

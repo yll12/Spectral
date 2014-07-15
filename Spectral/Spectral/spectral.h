@@ -1,7 +1,7 @@
-#include "derivativeMatrix.h"
-
 #ifndef SPECTRAL_H_
 #define SPECTRAL_H_
+
+#include "derivativeMatrix.h"
 
 namespace Spectral
 {

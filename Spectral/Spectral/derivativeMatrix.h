@@ -1,3 +1,6 @@
+#ifndef DERIVATIVEMATRIX_H_
+#define DERIVATIVEMATRIX_H_
+
 #include <vector>
 #include <Eigen/Dense>
 
@@ -21,3 +24,5 @@ public:
 
 
 };
+
+#endif

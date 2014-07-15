@@ -24,4 +24,15 @@ namespace Utility
 		of.close();
 	}
 
+	Eigen::MatrixXd UtilityMethods::Matlab_fliplr(const MatrixXd& x) 
+	{
+		return x.rowwise().reverse().eval();
+	}
+
+	Eigen::MatrixXd UtilityMethods::Matlab_flipud(const MatrixXd& x) 
+	{
+		return x.colwise().reverse().eval();
+	}
+	
+
 }
