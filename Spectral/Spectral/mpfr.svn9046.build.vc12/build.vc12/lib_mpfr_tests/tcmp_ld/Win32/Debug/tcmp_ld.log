@@ -1,0 +1,2 @@
+﻿  tcmp_ld.c
+c1 : fatal error C1083: Cannot open source file: '..\..\..\tests\tcmp_ld.c': No such file or directory

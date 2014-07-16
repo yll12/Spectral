@@ -1,0 +1,470 @@
+﻿  ..\..\src\mpfr.h not found
+  abort_prec_max.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\abort_prec_max.c': No such file or directory
+  acos.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\acos.c': No such file or directory
+  acosh.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\acosh.c': No such file or directory
+  add.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\add.c': No such file or directory
+  add1.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\add1.c': No such file or directory
+  add1sp.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\add1sp.c': No such file or directory
+  add_d.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\add_d.c': No such file or directory
+  add_ui.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\add_ui.c': No such file or directory
+  agm.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\agm.c': No such file or directory
+  ai.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\ai.c': No such file or directory
+  asin.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\asin.c': No such file or directory
+  asinh.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\asinh.c': No such file or directory
+  atan.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\atan.c': No such file or directory
+  atan2.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\atan2.c': No such file or directory
+  atanh.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\atanh.c': No such file or directory
+  bernoulli.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\bernoulli.c': No such file or directory
+  buildopt.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\buildopt.c': No such file or directory
+  cache.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\cache.c': No such file or directory
+  cbrt.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\cbrt.c': No such file or directory
+  check.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\check.c': No such file or directory
+  Generating Code...
+  Compiling...
+  clear.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\clear.c': No such file or directory
+  clears.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\clears.c': No such file or directory
+  cmp.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\cmp.c': No such file or directory
+  cmp2.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\cmp2.c': No such file or directory
+  cmp_abs.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\cmp_abs.c': No such file or directory
+  cmp_d.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\cmp_d.c': No such file or directory
+  cmp_ld.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\cmp_ld.c': No such file or directory
+  cmp_si.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\cmp_si.c': No such file or directory
+  cmp_ui.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\cmp_ui.c': No such file or directory
+  comparisons.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\comparisons.c': No such file or directory
+  const_catalan.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\const_catalan.c': No such file or directory
+  const_euler.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\const_euler.c': No such file or directory
+  const_log2.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\const_log2.c': No such file or directory
+  const_pi.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\const_pi.c': No such file or directory
+  constant.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\constant.c': No such file or directory
+  copysign.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\copysign.c': No such file or directory
+  cos.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\cos.c': No such file or directory
+  cosh.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\cosh.c': No such file or directory
+  cot.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\cot.c': No such file or directory
+  coth.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\coth.c': No such file or directory
+  Generating Code...
+  Compiling...
+  csc.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\csc.c': No such file or directory
+  csch.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\csch.c': No such file or directory
+  d_div.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\d_div.c': No such file or directory
+  d_sub.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\d_sub.c': No such file or directory
+  digamma.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\digamma.c': No such file or directory
+  dim.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\dim.c': No such file or directory
+  div.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\div.c': No such file or directory
+  div_2exp.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\div_2exp.c': No such file or directory
+  div_2si.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\div_2si.c': No such file or directory
+  div_2ui.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\div_2ui.c': No such file or directory
+  div_d.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\div_d.c': No such file or directory
+  div_ui.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\div_ui.c': No such file or directory
+  dump.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\dump.c': No such file or directory
+  eint.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\eint.c': No such file or directory
+  eq.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\eq.c': No such file or directory
+  erf.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\erf.c': No such file or directory
+  erfc.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\erfc.c': No such file or directory
+  exceptions.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\exceptions.c': No such file or directory
+  exp.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\exp.c': No such file or directory
+  exp10.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\exp10.c': No such file or directory
+  Generating Code...
+  Compiling...
+  exp2.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\exp2.c': No such file or directory
+  exp3.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\exp3.c': No such file or directory
+  exp_2.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\exp_2.c': No such file or directory
+  expm1.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\expm1.c': No such file or directory
+  extract.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\extract.c': No such file or directory
+  factorial.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\factorial.c': No such file or directory
+  fits_intmax.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\fits_intmax.c': No such file or directory
+  fits_sint.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\fits_sint.c': No such file or directory
+  fits_slong.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\fits_slong.c': No such file or directory
+  fits_sshort.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\fits_sshort.c': No such file or directory
+  fits_uint.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\fits_uint.c': No such file or directory
+  fits_uintmax.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\fits_uintmax.c': No such file or directory
+  fits_ulong.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\fits_ulong.c': No such file or directory
+  fits_ushort.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\fits_ushort.c': No such file or directory
+  fma.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\fma.c': No such file or directory
+  fms.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\fms.c': No such file or directory
+  fpif.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\fpif.c': No such file or directory
+  frac.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\frac.c': No such file or directory
+  free_cache.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\free_cache.c': No such file or directory
+  frexp.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\frexp.c': No such file or directory
+  Generating Code...
+  Compiling...
+  gamma.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\gamma.c': No such file or directory
+  gammaonethird.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\gammaonethird.c': No such file or directory
+  get_d.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\get_d.c': No such file or directory
+  get_d64.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\get_d64.c': No such file or directory
+  get_exp.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\get_exp.c': No such file or directory
+  get_f.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\get_f.c': No such file or directory
+  get_float128.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\get_float128.c': No such file or directory
+  get_flt.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\get_flt.c': No such file or directory
+  get_ld.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\get_ld.c': No such file or directory
+  get_si.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\get_si.c': No such file or directory
+  get_sj.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\get_sj.c': No such file or directory
+  get_str.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\get_str.c': No such file or directory
+  get_ui.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\get_ui.c': No such file or directory
+  get_uj.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\get_uj.c': No such file or directory
+  get_z.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\get_z.c': No such file or directory
+  get_z_exp.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\get_z_exp.c': No such file or directory
+  gmp_op.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\gmp_op.c': No such file or directory
+  grandom.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\grandom.c': No such file or directory
+  hypot.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\hypot.c': No such file or directory
+  init.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\init.c': No such file or directory
+  Generating Code...
+  Compiling...
+  init2.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\init2.c': No such file or directory
+  inits.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\inits.c': No such file or directory
+  inits2.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\inits2.c': No such file or directory
+  inp_str.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\inp_str.c': No such file or directory
+  int_ceil_log2.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\int_ceil_log2.c': No such file or directory
+  isinf.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\isinf.c': No such file or directory
+  isinteger.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\isinteger.c': No such file or directory
+  isnan.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\isnan.c': No such file or directory
+  isnum.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\isnum.c': No such file or directory
+  isqrt.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\isqrt.c': No such file or directory
+  isregular.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\isregular.c': No such file or directory
+  iszero.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\iszero.c': No such file or directory
+  jn.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\jn.c': No such file or directory
+  li2.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\li2.c': No such file or directory
+  lngamma.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\lngamma.c': No such file or directory
+  log.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\log.c': No such file or directory
+  log10.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\log10.c': No such file or directory
+  log1p.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\log1p.c': No such file or directory
+  log2.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\log2.c': No such file or directory
+  logging.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\logging.c': No such file or directory
+  Generating Code...
+  Compiling...
+  min_prec.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\min_prec.c': No such file or directory
+  minmax.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\minmax.c': No such file or directory
+  modf.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\modf.c': No such file or directory
+  mpfr-gmp.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\mpfr-gmp.c': No such file or directory
+  mp_clz_tab.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\mp_clz_tab.c': No such file or directory
+  mpn_exp.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\mpn_exp.c': No such file or directory
+  mul.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\mul.c': No such file or directory
+  mul_2exp.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\mul_2exp.c': No such file or directory
+  mul_2si.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\mul_2si.c': No such file or directory
+  mul_2ui.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\mul_2ui.c': No such file or directory
+  mul_d.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\mul_d.c': No such file or directory
+  mul_ui.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\mul_ui.c': No such file or directory
+  mulders.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\mulders.c': No such file or directory
+  neg.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\neg.c': No such file or directory
+  next.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\next.c': No such file or directory
+  out_str.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\out_str.c': No such file or directory
+  pow.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\pow.c': No such file or directory
+  pow_si.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\pow_si.c': No such file or directory
+  pow_ui.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\pow_ui.c': No such file or directory
+  pow_z.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\pow_z.c': No such file or directory
+  Generating Code...
+  Compiling...
+  powerof2.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\powerof2.c': No such file or directory
+  print_raw.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\print_raw.c': No such file or directory
+  print_rnd_mode.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\print_rnd_mode.c': No such file or directory
+  printf.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\printf.c': No such file or directory
+  rec_sqrt.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\rec_sqrt.c': No such file or directory
+  reldiff.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\reldiff.c': No such file or directory
+  rem1.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\rem1.c': No such file or directory
+  rint.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\rint.c': No such file or directory
+  rndna.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\rndna.c': No such file or directory
+  root.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\root.c': No such file or directory
+  round_near_x.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\round_near_x.c': No such file or directory
+  round_p.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\round_p.c': No such file or directory
+  round_prec.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\round_prec.c': No such file or directory
+  scale2.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\scale2.c': No such file or directory
+  sec.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\sec.c': No such file or directory
+  sech.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\sech.c': No such file or directory
+  set.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\set.c': No such file or directory
+  set_d.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\set_d.c': No such file or directory
+  set_d64.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\set_d64.c': No such file or directory
+  set_dfl_prec.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\set_dfl_prec.c': No such file or directory
+  Generating Code...
+  Compiling...
+  set_exp.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\set_exp.c': No such file or directory
+  set_f.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\set_f.c': No such file or directory
+  set_float128.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\set_float128.c': No such file or directory
+  set_flt.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\set_flt.c': No such file or directory
+  set_inf.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\set_inf.c': No such file or directory
+  set_ld.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\set_ld.c': No such file or directory
+  set_nan.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\set_nan.c': No such file or directory
+  set_prc_raw.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\set_prc_raw.c': No such file or directory
+  set_prec.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\set_prec.c': No such file or directory
+  set_q.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\set_q.c': No such file or directory
+  set_rnd.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\set_rnd.c': No such file or directory
+  set_si.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\set_si.c': No such file or directory
+  set_si_2exp.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\set_si_2exp.c': No such file or directory
+  set_sj.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\set_sj.c': No such file or directory
+  set_str.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\set_str.c': No such file or directory
+  set_str_raw.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\set_str_raw.c': No such file or directory
+  set_ui.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\set_ui.c': No such file or directory
+  set_ui_2exp.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\set_ui_2exp.c': No such file or directory
+  set_uj.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\set_uj.c': No such file or directory
+  set_z.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\set_z.c': No such file or directory
+  Generating Code...
+  Compiling...
+  set_zero.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\set_zero.c': No such file or directory
+  setmax.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\setmax.c': No such file or directory
+  setmin.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\setmin.c': No such file or directory
+  setsign.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\setsign.c': No such file or directory
+  set_z_exp.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\set_z_exp.c': No such file or directory
+  sgn.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\sgn.c': No such file or directory
+  si_op.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\si_op.c': No such file or directory
+  signbit.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\signbit.c': No such file or directory
+  sin.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\sin.c': No such file or directory
+  sin_cos.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\sin_cos.c': No such file or directory
+  sinh.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\sinh.c': No such file or directory
+  sinh_cosh.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\sinh_cosh.c': No such file or directory
+  sqr.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\sqr.c': No such file or directory
+  sqrt.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\sqrt.c': No such file or directory
+  sqrt_ui.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\sqrt_ui.c': No such file or directory
+  stack_interface.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\stack_interface.c': No such file or directory
+  strtofr.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\strtofr.c': No such file or directory
+  sub.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\sub.c': No such file or directory
+  sub1.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\sub1.c': No such file or directory
+  sub1sp.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\sub1sp.c': No such file or directory
+  Generating Code...
+  Compiling...
+  sub_d.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\sub_d.c': No such file or directory
+  sub_ui.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\sub_ui.c': No such file or directory
+  subnormal.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\subnormal.c': No such file or directory
+  sum.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\sum.c': No such file or directory
+  swap.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\swap.c': No such file or directory
+  tan.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\tan.c': No such file or directory
+  tanh.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\tanh.c': No such file or directory
+  uceil_exp2.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\uceil_exp2.c': No such file or directory
+  uceil_log2.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\uceil_log2.c': No such file or directory
+  ufloor_log2.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\ufloor_log2.c': No such file or directory
+  ui_div.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\ui_div.c': No such file or directory
+  ui_pow.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\ui_pow.c': No such file or directory
+  ui_pow_ui.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\ui_pow_ui.c': No such file or directory
+  ui_sub.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\ui_sub.c': No such file or directory
+  urandom.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\urandom.c': No such file or directory
+  urandomb.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\urandomb.c': No such file or directory
+  vasprintf.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\vasprintf.c': No such file or directory
+  version.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\version.c': No such file or directory
+  volatile.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\volatile.c': No such file or directory
+  yn.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\yn.c': No such file or directory
+  Generating Code...
+  Compiling...
+  zeta.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\zeta.c': No such file or directory
+  zeta_ui.c
+c1 : fatal error C1083: Cannot open source file: '..\..\src\zeta_ui.c': No such file or directory
+  get_patches.c
+d:\spectral\spectral\spectral\mpfr.svn9046.build.vc12\build.vc12\config.h(25): fatal error C1083: Cannot open include file: '..\..\mpir\lib\win32\debug\config.h': No such file or directory
+  Generating Code...

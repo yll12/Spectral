@@ -1,4 +1,5 @@
 ﻿  stdafx.cpp
   SpectralTesting.cpp
   Generating Code...
-  SpectralTestingApp.vcxproj -> D:\Spectral\Spectral\Debug\SpectralTestingApp.exe
+Spectral.lib(spectral.obj) : error LNK2019: unresolved external symbol _mpfr_set_default_prec referenced in function "public: static void __cdecl mpfr::mpreal::set_default_prec(long)" (?set_default_prec@mpreal@mpfr@@SAXJ@Z)
+D:\Spectral\Spectral\Debug\SpectralTestingApp.exe : fatal error LNK1120: 1 unresolved externals

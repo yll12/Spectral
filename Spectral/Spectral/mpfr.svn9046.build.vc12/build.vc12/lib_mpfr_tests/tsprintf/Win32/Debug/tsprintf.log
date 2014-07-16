@@ -1,0 +1,2 @@
+﻿  tsprintf.c
+c1 : fatal error C1083: Cannot open source file: '..\..\..\tests\tsprintf.c': No such file or directory

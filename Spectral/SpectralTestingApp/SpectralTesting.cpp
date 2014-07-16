@@ -21,7 +21,7 @@ int main()
 
 	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 
-	int n = 15;
+	int n = 20;
 	int m = 2;
 	
 	auto start = chrono::system_clock::now();
