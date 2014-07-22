@@ -27,7 +27,25 @@
     <ClInclude Include="derivativeMatrix.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="utility.h">
+    <ClInclude Include="Code11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code12.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code5Triclinic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cCode10TriclinicCORRECTED.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ORTHOGONALDISPCYL_SH.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ORTHOGONALDISPCYL.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -38,7 +56,25 @@
     <ClCompile Include="spectral.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="utility.cpp">
+    <ClCompile Include="code11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code12.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code5Triclinic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cCode10TriclinicCORRECTED.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ORTHOGONALDISPCYL_SH.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ORTHOGONALDISPCYL.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,6 +1,7 @@
 #include <iostream>
+#include "Code11.h"
+#include "utils.h"
 #include "spectral.h" 
-#include "utility.h"
 #include <Eigen/Dense>
 #define _CRTDBG_MAP_ALLOC
 #include <stdlib.h>
@@ -8,6 +9,7 @@
 #include <iomanip>
 #include <ctime> 
 #include <chrono>
+#include <utility>
 
 using namespace std;
 using namespace Eigen;
@@ -21,6 +23,7 @@ int main()
 
 	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 
+	/*
 	int n = 20;
 	int m = 2;
 	
@@ -36,9 +39,9 @@ int main()
 		ostringstream buffer;
 		buffer << "../../D" << (i + 1) << "cpp.csv";
 		string filename = buffer.str();
-		UtilityMethods::EigenToCSV(result.dm[i], filename);
+		UtilityMethods::eigenToCSV(result.dm[i], filename);
 	}
-	UtilityMethods::EigenToCSV(result.x, "../../xcpp.csv");
+	UtilityMethods::eigenToCSV(result.x, "../../xcpp.csv");
 	auto elapsed = chrono::duration_cast<std::chrono::milliseconds>(end - start);
 
 	cout << "Total time taken is: " << setprecision(15) << elapsed.count() / double(CLOCKS_PER_SEC)
@@ -62,6 +65,8 @@ int main()
 	cout << "chebdif(" << n << ", " << m  << ")= " << 
 		Spectral::SpectralMethods::chebdif(n, m) << endl;
 	*/
-	
+
+	Code11::Code11Method::code11();
+
 	return 0;
 }

@@ -1,5 +1,11 @@
 ﻿  testing.cpp
   spectral.cpp
-  utility.cpp
+  utils.cpp
+  ORTHOGONALDISPCYL.cpp
+  ORTHOGONALDISPCYL_SH.cpp
+  cCode10TriclinicCORRECTED.cpp
+  code5Triclinic.cpp
+  code12.cpp
+  code11.cpp
   Generating Code...
-  Spectral.vcxproj -> D:\Spectral\Spectral\Debug\Spectral.lib
+  Spectral.vcxproj -> C:\Users\Acer\spectral\Spectral\Debug\Spectral.lib

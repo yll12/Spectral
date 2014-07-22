@@ -2,16 +2,12 @@
 #include <cmath>
 
 #include "spectral.h"
-#include "utility.h"
+#include "utils.h"
 #include <stdexcept>
 #include <iostream>
 #include <Eigen/Dense>
 #include <unsupported/Eigen/MatrixFunctions>
 
-//Test
-#include <unsupported/Eigen/MPRealSupport>
-#include <Eigen/LU>
-#include <mpreal.h>
 // Delete later
 #include <fstream>
 #include <iomanip>
@@ -19,9 +15,6 @@
 using namespace std;
 using namespace Eigen;
 using namespace Utility;
-
-//Test
-using namespace mpfr;
 
 namespace Spectral
 {
@@ -55,40 +48,18 @@ namespace Spectral
 		
 		MatrixXd dx(n, n);
 
-		mpreal::set_default_prec(256);
-		// Declare matrix and vector types with multi-precision scalar type
-//		typedef Matrix<mpreal, Dynamic, Dynamic>  MatrixXmp;
-//		MatrixXmp A(n, n);
-
 		// Trigonometric identity.
 		// dx = (2 * (t_transpose + t).unaryExpr(ptr_fun(sin))).cwiseProduct((t_transpose - t).unaryExpr(ptr_fun(sin)));
 		dx = 2 * (t_transpose + t).array().sin().cwiseProduct((t_transpose - t).array().sin());
 		
-		MatrixXd temp_(n, n);
-		temp_ = (t + t_transpose);
-		UtilityMethods::EigenToCSV(temp_, "../../temp25cpp.csv");
-
-		// A = temp_.cast<mpreal>();
-
-		MatrixXd temp1(n, n);
-//		temp1 = A.array().sin().cast<double>();
-		UtilityMethods::EigenToCSV(temp1, "../../sintemp25cpp.csv");
-		MatrixXd temp2(n, n);
-		temp2 = (t_transpose - t).array().sin();
-		UtilityMethods::EigenToCSV(temp2, "../../temp2cpp.csv");
-		MatrixXd temp3(n, n);
-		temp3 = temp1.cwiseProduct(temp2);
-		UtilityMethods::EigenToCSV(temp3, "../../temp3cpp.csv");
-
-
 		// Flipping trick
 		// DX = [DX(1:n1,:); -flipud(fliplr(DX(1:n2,:)))];
+		MatrixXd top = dx.topRows(n2);
 		dx << dx.topRows(n1),
-			-UtilityMethods::Matlab_flipud(UtilityMethods::Matlab_fliplr(dx.topRows(n2)));
+			-UtilityMethods::matlab_flipud(UtilityMethods::matlab_fliplr(top));
 
 		// Put 1's on the main diagonal of dx.
 		dx += MatrixXd::Identity(n, n);
-		UtilityMethods::EigenToCSV(dx, "../../dxcpp.csv");
 
 		MatrixXd h(n, 1);
 		h.fill(-1);

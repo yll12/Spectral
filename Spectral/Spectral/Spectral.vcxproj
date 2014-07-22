@@ -48,7 +48,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>D:\Spectral\Spectral\Spectral\eigen-eigen-6b38706d90a9\eigen-eigen-6b38706d90a9;D:\Spectral\Spectral\Spectral\mpfrc++-3.5.9;D:\Spectral\Spectral\Spectral\mpfr-3.1.2\mpfr-3.1.2\src;D:\Spectral\Spectral\Spectral\gmp-6.0.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Spectral\eigen-eigen-6b38706d90a9\eigen-eigen-6b38706d90a9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -82,12 +82,24 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="derivativeMatrix.h" />
-    <ClInclude Include="utility.h" />
+    <ClInclude Include="Code11.h" />
+    <ClInclude Include="code12.h" />
+    <ClInclude Include="code5Triclinic.h" />
+    <ClInclude Include="cCode10TriclinicCORRECTED.h" />
+    <ClInclude Include="ORTHOGONALDISPCYL_SH.h" />
+    <ClInclude Include="ORTHOGONALDISPCYL.h" />
+    <ClInclude Include="Utils.h" />
     <ClInclude Include="spectral.h" />
     <ClInclude Include="testing.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="utility.cpp" />
+    <ClCompile Include="code11.cpp" />
+    <ClCompile Include="code12.cpp" />
+    <ClCompile Include="code5Triclinic.cpp" />
+    <ClCompile Include="cCode10TriclinicCORRECTED.cpp" />
+    <ClCompile Include="ORTHOGONALDISPCYL_SH.cpp" />
+    <ClCompile Include="ORTHOGONALDISPCYL.cpp" />
+    <ClCompile Include="utils.cpp" />
     <ClCompile Include="spectral.cpp" />
     <ClCompile Include="testing.cpp" />
   </ItemGroup>

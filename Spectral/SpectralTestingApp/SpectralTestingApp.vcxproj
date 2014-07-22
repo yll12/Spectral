@@ -54,13 +54,15 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalUsingDirectories>D:\Spectral\Spectral\Debug;%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
-      <AdditionalIncludeDirectories>D:\Spectral\Spectral\Spectral;D:\Spectral\Spectral\Spectral\eigen-eigen-6b38706d90a9\eigen-eigen-6b38706d90a9;D:\Spectral\Spectral\Spectral\mpfr-3.1.2\mpfr-3.1.2\src;D:\Spectral\Spectral\Spectral\gmp-6.0.0;D:\Spectral\Spectral\Spectral\mpfrc++-3.5.9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalUsingDirectories>%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Spectral;$(SolutionDir)Spectral\eigen-eigen-6b38706d90a9\eigen-eigen-6b38706d90a9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>$(OutDir)Spectral.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Spectral.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir);$(SolutionDir)Spectral\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
