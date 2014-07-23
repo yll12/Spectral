@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Code11.h"
+#include "code5Triclinic.h"
 #include "utils.h"
 #include "spectral.h" 
 #include <Eigen/Dense>
@@ -67,6 +68,7 @@ int main()
 	*/
 
 	Code11::Code11Method::code11();
+	//Code5Triclinic::Code5TriclinicMethods::code5Triclinic();
 
 	return 0;
 }

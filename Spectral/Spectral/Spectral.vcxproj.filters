@@ -68,13 +68,13 @@
     <ClCompile Include="code5Triclinic.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="cCode10TriclinicCORRECTED.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="ORTHOGONALDISPCYL_SH.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ORTHOGONALDISPCYL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cCode10TriclinicCORRECTED.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

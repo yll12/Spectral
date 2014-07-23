@@ -129,6 +129,10 @@ namespace Code5Triclinic
 
 		MatrixXcd w = e.diagonal().cwiseSqrt();
 
+		UtilityMethods::eigenToCSV(p, "../../p5cpp.csv");
+		UtilityMethods::eigenToCSV(e, "../../e5cpp.csv");
+		UtilityMethods::eigenToCSV(w, "../../w5cpp.csv");
+
 	}
 
 }

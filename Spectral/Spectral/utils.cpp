@@ -1,3 +1,4 @@
+/*
 #include "utils.h"
 
 #include <fstream>
@@ -6,15 +7,16 @@
 
 using namespace std;
 using namespace Eigen;
-
 namespace Utility
 {
+*/
 
 	/*!
 	*  Write Eigen Matrices to files
 	*/
-
-	void UtilityMethods::eigenToCSV(const MatrixXd& x, string filename)
+	/*
+	template <const typename Derived>
+	void UtilityMethods::eigenToCSV(const MatrixBase<Derived>& x, string filename)
 	{
 		const static IOFormat CSVFormat(StreamPrecision, DontAlignCols, ", ", "\n");
 		ofstream of(filename);
@@ -25,7 +27,7 @@ namespace Utility
 		of << setprecision(numeric_limits<double>::digits10 + 2) << x.format(CSVFormat) << endl;
 		of.close();
 	}
-
+	
 	MatrixXd UtilityMethods::matlab_fliplr(const MatrixXd& x)
 	{
 		return x.rowwise().reverse().eval();
@@ -60,6 +62,6 @@ namespace Utility
 
 	}
 
-
 }
+	*/
 

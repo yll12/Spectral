@@ -93,10 +93,10 @@
     <ClInclude Include="testing.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="cCode10TriclinicCORRECTED.cpp" />
     <ClCompile Include="code11.cpp" />
     <ClCompile Include="code12.cpp" />
     <ClCompile Include="code5Triclinic.cpp" />
-    <ClCompile Include="cCode10TriclinicCORRECTED.cpp" />
     <ClCompile Include="ORTHOGONALDISPCYL_SH.cpp" />
     <ClCompile Include="ORTHOGONALDISPCYL.cpp" />
     <ClCompile Include="utils.cpp" />
