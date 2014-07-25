@@ -1,12 +1,9 @@
-﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppClean.targets(76,5): warning : The process cannot access the file 'd:\spectral\spectral\spectral\debug\vc120.pdb' because it is being used by another process.
-  testing.cpp
-  spectral.cpp
-  utils.cpp
-  ORTHOGONALDISPCYL.cpp
-  ORTHOGONALDISPCYL_SH.cpp
-  code5Triclinic.cpp
-  code12.cpp
-  code11.cpp
-  cCode10TriclinicCORRECTED.cpp
-  Generating Code...
+﻿  code11.cpp
+d:\spectral\spectral\spectral\code11.cpp(119): warning C4018: '<' : signed/unsigned mismatch
+d:\spectral\spectral\spectral\code11.cpp(121): warning C4018: '<' : signed/unsigned mismatch
+d:\spectral\spectral\spectral\code11.cpp(141): warning C4018: '<' : signed/unsigned mismatch
+d:\spectral\spectral\spectral\code11.cpp(143): warning C4018: '<' : signed/unsigned mismatch
+d:\spectral\spectral\spectral\code11.cpp(150): warning C4018: '<' : signed/unsigned mismatch
+d:\spectral\spectral\spectral\code11.cpp(152): warning C4018: '<' : signed/unsigned mismatch
+d:\spectral\spectral\spectral\code11.cpp(159): warning C4018: '<' : signed/unsigned mismatch
   Spectral.vcxproj -> D:\Spectral\Spectral\Debug\Spectral.lib
