@@ -1,0 +1,2655 @@
+Start testing: Jul 29 13:17 GMT Daylight Time
+----------------------------------------------------------
+1/102 Testing: BLAS-xblat1s
+1/102 Test: BLAS-xblat1s
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xblat1s.exe" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/BLAS/TESTING
+"BLAS-xblat1s" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xblat1s.exe
+ARGS= 
+ Real BLAS Test Program Results
+
+
+ Test of subprogram number  1             SDOT 
+                                    ----- PASS -----
+
+ Test of subprogram number  2            SAXPY 
+                                    ----- PASS -----
+
+ Test of subprogram number  3            SROTG 
+                                    ----- PASS -----
+
+ Test of subprogram number  4             SROT 
+                                    ----- PASS -----
+
+ Test of subprogram number  5            SCOPY 
+                                    ----- PASS -----
+
+ Test of subprogram number  6            SSWAP 
+                                    ----- PASS -----
+
+ Test of subprogram number  7            SNRM2 
+                                    ----- PASS -----
+
+ Test of subprogram number  8            SASUM 
+                                    ----- PASS -----
+
+ Test of subprogram number  9            SSCAL 
+                                    ----- PASS -----
+
+ Test of subprogram number 10            ISAMAX
+                                    ----- PASS -----
+
+ Test of subprogram number 11            SROTMG
+                                    ----- PASS -----
+
+ Test of subprogram number 12            SROTM 
+                                    ----- PASS -----
+
+ Test of subprogram number 13            SDSDOT
+                                    ----- PASS -----
+Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xblat1s.exe returned 0
+<end of output>
+Test time =   0.31 sec
+----------------------------------------------------------
+Test Passed.
+"BLAS-xblat1s" end time: Jul 29 13:17 GMT Daylight Time
+"BLAS-xblat1s" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/102 Testing: BLAS-xblat2s
+2/102 Test: BLAS-xblat2s
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xblat2s.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BLAS/sblat2.in" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/BLAS/TESTING
+"BLAS-xblat2s" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xblat2s.exe
+ARGS= INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BLAS/sblat2.in
+Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xblat2s.exe returned 0
+<end of output>
+Test time =   0.16 sec
+----------------------------------------------------------
+Test Passed.
+"BLAS-xblat2s" end time: Jul 29 13:17 GMT Daylight Time
+"BLAS-xblat2s" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/102 Testing: BLAS-xblat3s
+3/102 Test: BLAS-xblat3s
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xblat3s.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BLAS/sblat3.in" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/BLAS/TESTING
+"BLAS-xblat3s" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xblat3s.exe
+ARGS= INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BLAS/sblat3.in
+Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xblat3s.exe returned 0
+<end of output>
+Test time =   0.17 sec
+----------------------------------------------------------
+Test Passed.
+"BLAS-xblat3s" end time: Jul 29 13:17 GMT Daylight Time
+"BLAS-xblat3s" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/102 Testing: BLAS-xblat1d
+4/102 Test: BLAS-xblat1d
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xblat1d.exe" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/BLAS/TESTING
+"BLAS-xblat1d" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xblat1d.exe
+ARGS= 
+ Real BLAS Test Program Results
+
+
+ Test of subprogram number  1             DDOT 
+                                    ----- PASS -----
+
+ Test of subprogram number  2            DAXPY 
+                                    ----- PASS -----
+
+ Test of subprogram number  3            DROTG 
+                                    ----- PASS -----
+
+ Test of subprogram number  4             DROT 
+                                    ----- PASS -----
+
+ Test of subprogram number  5            DCOPY 
+                                    ----- PASS -----
+
+ Test of subprogram number  6            DSWAP 
+                                    ----- PASS -----
+
+ Test of subprogram number  7            DNRM2 
+                                    ----- PASS -----
+
+ Test of subprogram number  8            DASUM 
+                                    ----- PASS -----
+
+ Test of subprogram number  9            DSCAL 
+                                    ----- PASS -----
+
+ Test of subprogram number 10            IDAMAX
+                                    ----- PASS -----
+
+ Test of subprogram number 11            DROTMG
+                                    ----- PASS -----
+
+ Test of subprogram number 12            DROTM 
+                                    ----- PASS -----
+
+ Test of subprogram number 13            DSDOT 
+                                    ----- PASS -----
+Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xblat1d.exe returned 0
+<end of output>
+Test time =   0.15 sec
+----------------------------------------------------------
+Test Passed.
+"BLAS-xblat1d" end time: Jul 29 13:17 GMT Daylight Time
+"BLAS-xblat1d" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/102 Testing: BLAS-xblat2d
+5/102 Test: BLAS-xblat2d
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xblat2d.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BLAS/dblat2.in" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/BLAS/TESTING
+"BLAS-xblat2d" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xblat2d.exe
+ARGS= INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BLAS/dblat2.in
+Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xblat2d.exe returned 0
+<end of output>
+Test time =   0.15 sec
+----------------------------------------------------------
+Test Passed.
+"BLAS-xblat2d" end time: Jul 29 13:17 GMT Daylight Time
+"BLAS-xblat2d" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/102 Testing: BLAS-xblat3d
+6/102 Test: BLAS-xblat3d
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xblat3d.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BLAS/dblat3.in" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/BLAS/TESTING
+"BLAS-xblat3d" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xblat3d.exe
+ARGS= INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BLAS/dblat3.in
+Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xblat3d.exe returned 0
+<end of output>
+Test time =   0.17 sec
+----------------------------------------------------------
+Test Passed.
+"BLAS-xblat3d" end time: Jul 29 13:17 GMT Daylight Time
+"BLAS-xblat3d" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/102 Testing: BLAS-xblat1c
+7/102 Test: BLAS-xblat1c
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xblat1c.exe" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/BLAS/TESTING
+"BLAS-xblat1c" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xblat1c.exe
+ARGS= 
+ Complex BLAS Test Program Results
+
+
+ Test of subprogram number  1            CDOTC 
+                                    ----- PASS -----
+
+ Test of subprogram number  2            CDOTU 
+                                    ----- PASS -----
+
+ Test of subprogram number  3            CAXPY 
+                                    ----- PASS -----
+
+ Test of subprogram number  4            CCOPY 
+                                    ----- PASS -----
+
+ Test of subprogram number  5            CSWAP 
+                                    ----- PASS -----
+
+ Test of subprogram number  6            SCNRM2
+                                    ----- PASS -----
+
+ Test of subprogram number  7            SCASUM
+                                    ----- PASS -----
+
+ Test of subprogram number  8            CSCAL 
+                                    ----- PASS -----
+
+ Test of subprogram number  9            CSSCAL
+                                    ----- PASS -----
+
+ Test of subprogram number 10            ICAMAX
+                                    ----- PASS -----
+Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xblat1c.exe returned 0
+<end of output>
+Test time =   0.16 sec
+----------------------------------------------------------
+Test Passed.
+"BLAS-xblat1c" end time: Jul 29 13:17 GMT Daylight Time
+"BLAS-xblat1c" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/102 Testing: BLAS-xblat2c
+8/102 Test: BLAS-xblat2c
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xblat2c.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BLAS/cblat2.in" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/BLAS/TESTING
+"BLAS-xblat2c" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xblat2c.exe
+ARGS= INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BLAS/cblat2.in
+Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xblat2c.exe returned 0
+<end of output>
+Test time =   0.15 sec
+----------------------------------------------------------
+Test Passed.
+"BLAS-xblat2c" end time: Jul 29 13:17 GMT Daylight Time
+"BLAS-xblat2c" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/102 Testing: BLAS-xblat3c
+9/102 Test: BLAS-xblat3c
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xblat3c.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BLAS/cblat3.in" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/BLAS/TESTING
+"BLAS-xblat3c" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xblat3c.exe
+ARGS= INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BLAS/cblat3.in
+Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xblat3c.exe returned 0
+<end of output>
+Test time =   0.16 sec
+----------------------------------------------------------
+Test Passed.
+"BLAS-xblat3c" end time: Jul 29 13:17 GMT Daylight Time
+"BLAS-xblat3c" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/102 Testing: BLAS-xblat1z
+10/102 Test: BLAS-xblat1z
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xblat1z.exe" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/BLAS/TESTING
+"BLAS-xblat1z" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xblat1z.exe
+ARGS= 
+ Complex BLAS Test Program Results
+
+
+ Test of subprogram number  1            ZDOTC 
+                                    ----- PASS -----
+
+ Test of subprogram number  2            ZDOTU 
+                                    ----- PASS -----
+
+ Test of subprogram number  3            ZAXPY 
+                                    ----- PASS -----
+
+ Test of subprogram number  4            ZCOPY 
+                                    ----- PASS -----
+
+ Test of subprogram number  5            ZSWAP 
+                                    ----- PASS -----
+
+ Test of subprogram number  6            DZNRM2
+                                    ----- PASS -----
+
+ Test of subprogram number  7            DZASUM
+                                    ----- PASS -----
+
+ Test of subprogram number  8            ZSCAL 
+                                    ----- PASS -----
+
+ Test of subprogram number  9            ZDSCAL
+                                    ----- PASS -----
+
+ Test of subprogram number 10            IZAMAX
+                                    ----- PASS -----
+Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xblat1z.exe returned 0
+<end of output>
+Test time =   0.18 sec
+----------------------------------------------------------
+Test Passed.
+"BLAS-xblat1z" end time: Jul 29 13:17 GMT Daylight Time
+"BLAS-xblat1z" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/102 Testing: BLAS-xblat2z
+11/102 Test: BLAS-xblat2z
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xblat2z.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BLAS/zblat2.in" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/BLAS/TESTING
+"BLAS-xblat2z" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xblat2z.exe
+ARGS= INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BLAS/zblat2.in
+Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xblat2z.exe returned 0
+<end of output>
+Test time =   0.16 sec
+----------------------------------------------------------
+Test Passed.
+"BLAS-xblat2z" end time: Jul 29 13:17 GMT Daylight Time
+"BLAS-xblat2z" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/102 Testing: BLAS-xblat3z
+12/102 Test: BLAS-xblat3z
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xblat3z.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BLAS/zblat3.in" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/BLAS/TESTING
+"BLAS-xblat3z" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xblat3z.exe
+ARGS= INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BLAS/zblat3.in
+Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xblat3z.exe returned 0
+<end of output>
+Test time =   0.16 sec
+----------------------------------------------------------
+Test Passed.
+"BLAS-xblat3z" end time: Jul 29 13:17 GMT Daylight Time
+"BLAS-xblat3z" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/102 Testing: LAPACK-xlintsts_stest_in
+13/102 Test: LAPACK-xlintsts_stest_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xlintsts.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/stest.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/stest.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xlintsts_stest_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xlintsts.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/stest.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/stest.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/stest.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xlintsts.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.10 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xlintsts_stest_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xlintsts_stest_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/102 Testing: LAPACK-xlintstrfs_stest_rfp_in
+14/102 Test: LAPACK-xlintstrfs_stest_rfp_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xlintstrfs.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/stest_rfp.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/stest_rfp.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xlintstrfs_stest_rfp_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xlintstrfs.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/stest_rfp.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/stest_rfp.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/stest_rfp.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xlintstrfs.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xlintstrfs_stest_rfp_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xlintstrfs_stest_rfp_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/102 Testing: LAPACK-xeigtsts_nep_in
+15/102 Test: LAPACK-xeigtsts_nep_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/nep.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/snep.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtsts_nep_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/snep.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/snep.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/nep.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtsts_nep_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtsts_nep_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/102 Testing: LAPACK-xeigtsts_sep_in
+16/102 Test: LAPACK-xeigtsts_sep_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/sep.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/ssep.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtsts_sep_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/ssep.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/ssep.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/sep.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtsts_sep_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtsts_sep_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/102 Testing: LAPACK-xeigtsts_svd_in
+17/102 Test: LAPACK-xeigtsts_svd_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/svd.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/ssvd.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtsts_svd_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/ssvd.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/ssvd.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/svd.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtsts_svd_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtsts_svd_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/102 Testing: LAPACK-xeigtsts_sec_in
+18/102 Test: LAPACK-xeigtsts_sec_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/sec.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/sec.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtsts_sec_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/sec.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/sec.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/sec.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtsts_sec_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtsts_sec_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/102 Testing: LAPACK-xeigtsts_sed_in
+19/102 Test: LAPACK-xeigtsts_sed_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/sed.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/sed.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtsts_sed_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/sed.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/sed.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/sed.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtsts_sed_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtsts_sed_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/102 Testing: LAPACK-xeigtsts_sgg_in
+20/102 Test: LAPACK-xeigtsts_sgg_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/sgg.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/sgg.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtsts_sgg_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/sgg.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/sgg.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/sgg.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtsts_sgg_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtsts_sgg_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+21/102 Testing: LAPACK-xeigtsts_sgd_in
+21/102 Test: LAPACK-xeigtsts_sgd_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/sgd.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/sgd.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtsts_sgd_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/sgd.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/sgd.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/sgd.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtsts_sgd_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtsts_sgd_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+22/102 Testing: LAPACK-xeigtsts_ssb_in
+22/102 Test: LAPACK-xeigtsts_ssb_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/ssb.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/ssb.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtsts_ssb_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/ssb.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/ssb.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/ssb.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.17 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtsts_ssb_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtsts_ssb_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+23/102 Testing: LAPACK-xeigtsts_ssg_in
+23/102 Test: LAPACK-xeigtsts_ssg_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/ssg.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/ssg.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtsts_ssg_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/ssg.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/ssg.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/ssg.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtsts_ssg_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtsts_ssg_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+24/102 Testing: LAPACK-xeigtsts_sbal_in
+24/102 Test: LAPACK-xeigtsts_sbal_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/sbal.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/sbal.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtsts_sbal_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/sbal.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/sbal.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/sbal.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtsts_sbal_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtsts_sbal_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+25/102 Testing: LAPACK-xeigtsts_sbak_in
+25/102 Test: LAPACK-xeigtsts_sbak_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/sbak.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/sbak.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtsts_sbak_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/sbak.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/sbak.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/sbak.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtsts_sbak_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtsts_sbak_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+26/102 Testing: LAPACK-xeigtsts_sgbal_in
+26/102 Test: LAPACK-xeigtsts_sgbal_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/sgbal.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/sgbal.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtsts_sgbal_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/sgbal.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/sgbal.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/sgbal.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtsts_sgbal_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtsts_sgbal_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+27/102 Testing: LAPACK-xeigtsts_sgbak_in
+27/102 Test: LAPACK-xeigtsts_sgbak_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/sgbak.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/sgbak.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtsts_sgbak_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/sgbak.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/sgbak.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/sgbak.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtsts_sgbak_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtsts_sgbak_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+28/102 Testing: LAPACK-xeigtsts_sbb_in
+28/102 Test: LAPACK-xeigtsts_sbb_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/sbb.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/sbb.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtsts_sbb_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/sbb.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/sbb.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/sbb.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtsts_sbb_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtsts_sbb_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+29/102 Testing: LAPACK-xeigtsts_glm_in
+29/102 Test: LAPACK-xeigtsts_glm_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/glm.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/sglm.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtsts_glm_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/sglm.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/sglm.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/glm.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtsts_glm_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtsts_glm_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+30/102 Testing: LAPACK-xeigtsts_gqr_in
+30/102 Test: LAPACK-xeigtsts_gqr_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/gqr.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/sgqr.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtsts_gqr_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/sgqr.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/sgqr.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/gqr.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.12 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtsts_gqr_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtsts_gqr_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+31/102 Testing: LAPACK-xeigtsts_gsv_in
+31/102 Test: LAPACK-xeigtsts_gsv_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/gsv.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/sgsv.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtsts_gsv_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/sgsv.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/sgsv.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/gsv.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtsts_gsv_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtsts_gsv_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+32/102 Testing: LAPACK-xeigtsts_csd_in
+32/102 Test: LAPACK-xeigtsts_csd_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/csd.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/scsd.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtsts_csd_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/scsd.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/scsd.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/csd.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtsts_csd_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtsts_csd_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+33/102 Testing: LAPACK-xeigtsts_lse_in
+33/102 Test: LAPACK-xeigtsts_lse_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/lse.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/slse.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtsts_lse_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/slse.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/slse.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/lse.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtsts.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtsts_lse_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtsts_lse_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+34/102 Testing: LAPACK-xlintstd_dtest_in
+34/102 Test: LAPACK-xlintstd_dtest_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xlintstd.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/dtest.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dtest.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xlintstd_dtest_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xlintstd.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dtest.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dtest.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/dtest.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xlintstd.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xlintstd_dtest_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xlintstd_dtest_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+35/102 Testing: LAPACK-xlintstrfd_dtest_rfp_in
+35/102 Test: LAPACK-xlintstrfd_dtest_rfp_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xlintstrfd.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/dtest_rfp.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dtest_rfp.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xlintstrfd_dtest_rfp_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xlintstrfd.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dtest_rfp.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dtest_rfp.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/dtest_rfp.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xlintstrfd.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xlintstrfd_dtest_rfp_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xlintstrfd_dtest_rfp_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+36/102 Testing: LAPACK-xeigtstd_nep_in
+36/102 Test: LAPACK-xeigtstd_nep_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/nep.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dnep.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstd_nep_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dnep.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dnep.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/nep.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstd_nep_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstd_nep_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+37/102 Testing: LAPACK-xeigtstd_sep_in
+37/102 Test: LAPACK-xeigtstd_sep_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/sep.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dsep.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstd_sep_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dsep.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dsep.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/sep.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstd_sep_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstd_sep_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+38/102 Testing: LAPACK-xeigtstd_svd_in
+38/102 Test: LAPACK-xeigtstd_svd_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/svd.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dsvd.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstd_svd_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dsvd.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dsvd.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/svd.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstd_svd_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstd_svd_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+39/102 Testing: LAPACK-xeigtstd_dec_in
+39/102 Test: LAPACK-xeigtstd_dec_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/dec.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dec.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstd_dec_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dec.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dec.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/dec.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstd_dec_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstd_dec_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+40/102 Testing: LAPACK-xeigtstd_ded_in
+40/102 Test: LAPACK-xeigtstd_ded_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/ded.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/ded.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstd_ded_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/ded.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/ded.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/ded.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstd_ded_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstd_ded_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+41/102 Testing: LAPACK-xeigtstd_dgg_in
+41/102 Test: LAPACK-xeigtstd_dgg_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/dgg.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dgg.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstd_dgg_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dgg.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dgg.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/dgg.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstd_dgg_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstd_dgg_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+42/102 Testing: LAPACK-xeigtstd_dgd_in
+42/102 Test: LAPACK-xeigtstd_dgd_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/dgd.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dgd.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstd_dgd_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dgd.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dgd.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/dgd.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstd_dgd_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstd_dgd_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+43/102 Testing: LAPACK-xeigtstd_dsb_in
+43/102 Test: LAPACK-xeigtstd_dsb_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/dsb.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dsb.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstd_dsb_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dsb.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dsb.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/dsb.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstd_dsb_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstd_dsb_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+44/102 Testing: LAPACK-xeigtstd_dsg_in
+44/102 Test: LAPACK-xeigtstd_dsg_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/dsg.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dsg.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstd_dsg_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dsg.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dsg.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/dsg.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstd_dsg_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstd_dsg_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+45/102 Testing: LAPACK-xeigtstd_dbal_in
+45/102 Test: LAPACK-xeigtstd_dbal_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/dbal.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dbal.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstd_dbal_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dbal.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dbal.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/dbal.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstd_dbal_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstd_dbal_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+46/102 Testing: LAPACK-xeigtstd_dbak_in
+46/102 Test: LAPACK-xeigtstd_dbak_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/dbak.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dbak.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstd_dbak_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dbak.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dbak.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/dbak.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstd_dbak_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstd_dbak_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+47/102 Testing: LAPACK-xeigtstd_dgbal_in
+47/102 Test: LAPACK-xeigtstd_dgbal_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/dgbal.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dgbal.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstd_dgbal_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dgbal.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dgbal.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/dgbal.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstd_dgbal_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstd_dgbal_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+48/102 Testing: LAPACK-xeigtstd_dgbak_in
+48/102 Test: LAPACK-xeigtstd_dgbak_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/dgbak.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dgbak.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstd_dgbak_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dgbak.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dgbak.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/dgbak.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstd_dgbak_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstd_dgbak_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+49/102 Testing: LAPACK-xeigtstd_dbb_in
+49/102 Test: LAPACK-xeigtstd_dbb_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/dbb.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dbb.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstd_dbb_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dbb.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dbb.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/dbb.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstd_dbb_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstd_dbb_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+50/102 Testing: LAPACK-xeigtstd_glm_in
+50/102 Test: LAPACK-xeigtstd_glm_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/glm.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dglm.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstd_glm_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dglm.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dglm.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/glm.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstd_glm_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstd_glm_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+51/102 Testing: LAPACK-xeigtstd_gqr_in
+51/102 Test: LAPACK-xeigtstd_gqr_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/gqr.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dgqr.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstd_gqr_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dgqr.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dgqr.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/gqr.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstd_gqr_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstd_gqr_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+52/102 Testing: LAPACK-xeigtstd_gsv_in
+52/102 Test: LAPACK-xeigtstd_gsv_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/gsv.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dgsv.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstd_gsv_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dgsv.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dgsv.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/gsv.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstd_gsv_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstd_gsv_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+53/102 Testing: LAPACK-xeigtstd_csd_in
+53/102 Test: LAPACK-xeigtstd_csd_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/csd.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dcsd.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstd_csd_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dcsd.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dcsd.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/csd.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstd_csd_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstd_csd_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+54/102 Testing: LAPACK-xeigtstd_lse_in
+54/102 Test: LAPACK-xeigtstd_lse_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/lse.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dlse.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstd_lse_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dlse.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/dlse.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/lse.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstd.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstd_lse_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstd_lse_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+55/102 Testing: LAPACK-xlintstc_ctest_in
+55/102 Test: LAPACK-xlintstc_ctest_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xlintstc.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/ctest.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/ctest.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xlintstc_ctest_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xlintstc.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/ctest.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/ctest.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/ctest.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xlintstc.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xlintstc_ctest_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xlintstc_ctest_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+56/102 Testing: LAPACK-xlintstrfc_ctest_rfp_in
+56/102 Test: LAPACK-xlintstrfc_ctest_rfp_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xlintstrfc.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/ctest_rfp.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/ctest_rfp.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xlintstrfc_ctest_rfp_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xlintstrfc.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/ctest_rfp.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/ctest_rfp.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/ctest_rfp.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xlintstrfc.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xlintstrfc_ctest_rfp_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xlintstrfc_ctest_rfp_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+57/102 Testing: LAPACK-xeigtstc_nep_in
+57/102 Test: LAPACK-xeigtstc_nep_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/nep.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/cnep.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstc_nep_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/cnep.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/cnep.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/nep.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstc_nep_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstc_nep_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+58/102 Testing: LAPACK-xeigtstc_sep_in
+58/102 Test: LAPACK-xeigtstc_sep_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/sep.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/csep.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstc_sep_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/csep.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/csep.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/sep.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstc_sep_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstc_sep_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+59/102 Testing: LAPACK-xeigtstc_svd_in
+59/102 Test: LAPACK-xeigtstc_svd_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/svd.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/csvd.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstc_svd_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/csvd.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/csvd.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/svd.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstc_svd_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstc_svd_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+60/102 Testing: LAPACK-xeigtstc_cec_in
+60/102 Test: LAPACK-xeigtstc_cec_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/cec.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/cec.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstc_cec_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/cec.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/cec.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/cec.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstc_cec_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstc_cec_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+61/102 Testing: LAPACK-xeigtstc_ced_in
+61/102 Test: LAPACK-xeigtstc_ced_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/ced.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/ced.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstc_ced_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/ced.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/ced.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/ced.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstc_ced_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstc_ced_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+62/102 Testing: LAPACK-xeigtstc_cgg_in
+62/102 Test: LAPACK-xeigtstc_cgg_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/cgg.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/cgg.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstc_cgg_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/cgg.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/cgg.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/cgg.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstc_cgg_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstc_cgg_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+63/102 Testing: LAPACK-xeigtstc_cgd_in
+63/102 Test: LAPACK-xeigtstc_cgd_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/cgd.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/cgd.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstc_cgd_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/cgd.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/cgd.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/cgd.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstc_cgd_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstc_cgd_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+64/102 Testing: LAPACK-xeigtstc_csb_in
+64/102 Test: LAPACK-xeigtstc_csb_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/csb.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/csb.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstc_csb_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/csb.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/csb.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/csb.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstc_csb_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstc_csb_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+65/102 Testing: LAPACK-xeigtstc_csg_in
+65/102 Test: LAPACK-xeigtstc_csg_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/csg.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/csg.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstc_csg_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/csg.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/csg.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/csg.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstc_csg_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstc_csg_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+66/102 Testing: LAPACK-xeigtstc_cbal_in
+66/102 Test: LAPACK-xeigtstc_cbal_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/cbal.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/cbal.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstc_cbal_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/cbal.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/cbal.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/cbal.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstc_cbal_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstc_cbal_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+67/102 Testing: LAPACK-xeigtstc_cbak_in
+67/102 Test: LAPACK-xeigtstc_cbak_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/cbak.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/cbak.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstc_cbak_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/cbak.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/cbak.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/cbak.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstc_cbak_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstc_cbak_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+68/102 Testing: LAPACK-xeigtstc_cgbal_in
+68/102 Test: LAPACK-xeigtstc_cgbal_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/cgbal.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/cgbal.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstc_cgbal_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/cgbal.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/cgbal.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/cgbal.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstc_cgbal_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstc_cgbal_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+69/102 Testing: LAPACK-xeigtstc_cgbak_in
+69/102 Test: LAPACK-xeigtstc_cgbak_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/cgbak.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/cgbak.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstc_cgbak_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/cgbak.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/cgbak.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/cgbak.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstc_cgbak_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstc_cgbak_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+70/102 Testing: LAPACK-xeigtstc_cbb_in
+70/102 Test: LAPACK-xeigtstc_cbb_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/cbb.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/cbb.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstc_cbb_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/cbb.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/cbb.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/cbb.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstc_cbb_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstc_cbb_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+71/102 Testing: LAPACK-xeigtstc_glm_in
+71/102 Test: LAPACK-xeigtstc_glm_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/glm.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/cglm.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstc_glm_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/cglm.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/cglm.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/glm.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstc_glm_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstc_glm_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+72/102 Testing: LAPACK-xeigtstc_gqr_in
+72/102 Test: LAPACK-xeigtstc_gqr_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/gqr.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/cgqr.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstc_gqr_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/cgqr.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/cgqr.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/gqr.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstc_gqr_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstc_gqr_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+73/102 Testing: LAPACK-xeigtstc_gsv_in
+73/102 Test: LAPACK-xeigtstc_gsv_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/gsv.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/cgsv.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstc_gsv_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/cgsv.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/cgsv.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/gsv.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstc_gsv_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstc_gsv_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+74/102 Testing: LAPACK-xeigtstc_csd_in
+74/102 Test: LAPACK-xeigtstc_csd_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/csd.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/ccsd.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstc_csd_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/ccsd.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/ccsd.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/csd.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstc_csd_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstc_csd_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+75/102 Testing: LAPACK-xeigtstc_lse_in
+75/102 Test: LAPACK-xeigtstc_lse_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/lse.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/clse.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstc_lse_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/clse.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/clse.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/lse.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstc.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstc_lse_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstc_lse_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+76/102 Testing: LAPACK-xlintstz_ztest_in
+76/102 Test: LAPACK-xlintstz_ztest_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xlintstz.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/ztest.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/ztest.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xlintstz_ztest_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xlintstz.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/ztest.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/ztest.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/ztest.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xlintstz.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xlintstz_ztest_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xlintstz_ztest_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+77/102 Testing: LAPACK-xlintstrfz_ztest_rfp_in
+77/102 Test: LAPACK-xlintstrfz_ztest_rfp_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xlintstrfz.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/ztest_rfp.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/ztest_rfp.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xlintstrfz_ztest_rfp_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xlintstrfz.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/ztest_rfp.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/ztest_rfp.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/ztest_rfp.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xlintstrfz.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xlintstrfz_ztest_rfp_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xlintstrfz_ztest_rfp_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+78/102 Testing: LAPACK-xeigtstz_nep_in
+78/102 Test: LAPACK-xeigtstz_nep_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/nep.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/znep.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstz_nep_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/znep.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/znep.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/nep.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstz_nep_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstz_nep_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+79/102 Testing: LAPACK-xeigtstz_sep_in
+79/102 Test: LAPACK-xeigtstz_sep_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/sep.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zsep.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstz_sep_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zsep.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zsep.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/sep.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstz_sep_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstz_sep_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+80/102 Testing: LAPACK-xeigtstz_svd_in
+80/102 Test: LAPACK-xeigtstz_svd_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/svd.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zsvd.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstz_svd_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zsvd.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zsvd.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/svd.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstz_svd_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstz_svd_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+81/102 Testing: LAPACK-xeigtstz_zec_in
+81/102 Test: LAPACK-xeigtstz_zec_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/zec.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zec.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstz_zec_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zec.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zec.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/zec.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstz_zec_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstz_zec_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+82/102 Testing: LAPACK-xeigtstz_zed_in
+82/102 Test: LAPACK-xeigtstz_zed_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/zed.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zed.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstz_zed_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zed.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zed.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/zed.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstz_zed_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstz_zed_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+83/102 Testing: LAPACK-xeigtstz_zgg_in
+83/102 Test: LAPACK-xeigtstz_zgg_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/zgg.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zgg.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstz_zgg_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zgg.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zgg.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/zgg.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstz_zgg_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstz_zgg_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+84/102 Testing: LAPACK-xeigtstz_zgd_in
+84/102 Test: LAPACK-xeigtstz_zgd_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/zgd.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zgd.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstz_zgd_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zgd.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zgd.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/zgd.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstz_zgd_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstz_zgd_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+85/102 Testing: LAPACK-xeigtstz_zsb_in
+85/102 Test: LAPACK-xeigtstz_zsb_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/zsb.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zsb.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstz_zsb_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zsb.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zsb.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/zsb.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstz_zsb_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstz_zsb_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+86/102 Testing: LAPACK-xeigtstz_zsg_in
+86/102 Test: LAPACK-xeigtstz_zsg_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/zsg.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zsg.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstz_zsg_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zsg.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zsg.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/zsg.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstz_zsg_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstz_zsg_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+87/102 Testing: LAPACK-xeigtstz_zbal_in
+87/102 Test: LAPACK-xeigtstz_zbal_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/zbal.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zbal.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstz_zbal_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zbal.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zbal.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/zbal.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstz_zbal_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstz_zbal_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+88/102 Testing: LAPACK-xeigtstz_zbak_in
+88/102 Test: LAPACK-xeigtstz_zbak_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/zbak.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zbak.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstz_zbak_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zbak.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zbak.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/zbak.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstz_zbak_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstz_zbak_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+89/102 Testing: LAPACK-xeigtstz_zgbal_in
+89/102 Test: LAPACK-xeigtstz_zgbal_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/zgbal.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zgbal.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstz_zgbal_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zgbal.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zgbal.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/zgbal.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstz_zgbal_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstz_zgbal_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+90/102 Testing: LAPACK-xeigtstz_zgbak_in
+90/102 Test: LAPACK-xeigtstz_zgbak_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/zgbak.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zgbak.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstz_zgbak_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zgbak.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zgbak.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/zgbak.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstz_zgbak_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstz_zgbak_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+91/102 Testing: LAPACK-xeigtstz_zbb_in
+91/102 Test: LAPACK-xeigtstz_zbb_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/zbb.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zbb.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstz_zbb_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zbb.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zbb.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/zbb.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstz_zbb_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstz_zbb_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+92/102 Testing: LAPACK-xeigtstz_glm_in
+92/102 Test: LAPACK-xeigtstz_glm_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/glm.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zglm.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstz_glm_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zglm.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zglm.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/glm.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstz_glm_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstz_glm_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+93/102 Testing: LAPACK-xeigtstz_gqr_in
+93/102 Test: LAPACK-xeigtstz_gqr_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/gqr.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zgqr.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstz_gqr_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zgqr.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zgqr.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/gqr.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstz_gqr_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstz_gqr_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+94/102 Testing: LAPACK-xeigtstz_gsv_in
+94/102 Test: LAPACK-xeigtstz_gsv_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/gsv.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zgsv.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstz_gsv_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zgsv.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zgsv.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/gsv.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstz_gsv_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstz_gsv_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+95/102 Testing: LAPACK-xeigtstz_csd_in
+95/102 Test: LAPACK-xeigtstz_csd_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/csd.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zcsd.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstz_csd_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zcsd.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zcsd.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/csd.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstz_csd_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstz_csd_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+96/102 Testing: LAPACK-xeigtstz_lse_in
+96/102 Test: LAPACK-xeigtstz_lse_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/lse.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zlse.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xeigtstz_lse_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zlse.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zlse.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/lse.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xeigtstz.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xeigtstz_lse_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xeigtstz_lse_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+97/102 Testing: LAPACK-xlintstzc_zctest_in
+97/102 Test: LAPACK-xlintstzc_zctest_in
+Command: "C:/Program Files (x86)/CMake/bin/cmake.exe" "-DTEST=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xlintstzc.exe" "-DINPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/zctest.in" "-DOUTPUT=D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zctest.out" "-DINTDIR=." "-P" "D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/Testing
+"LAPACK-xlintstzc_zctest_in" start time: Jul 29 13:17 GMT Daylight Time
+Output:
+----------------------------------------------------------
+Running: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xlintstzc.exe
+ARGS= OUTPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zctest.out;ERROR_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/TESTING/zctest.out.err;INPUT_FILE;D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/zctest.in
+Test OUTPUT:
+
+Test ERROR:
+
+CMake Error at D:/Spectral/Spectral/Spectral/lapack-3.5.0/TESTING/runtest.cmake:36 (message):
+  Test D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin//xlintstzc.exe
+  returned The system cannot find the file specified
+
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"LAPACK-xlintstzc_zctest_in" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK-xlintstzc_zctest_in" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: PYTHON_EXECUTABLE-NOTFOUND
+98/102 Testing: LAPACK_Test_Summary
+98/102 Test: LAPACK_Test_Summary
+Command: "" "lapack_testing.py"
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD
+"LAPACK_Test_Summary" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"LAPACK_Test_Summary" end time: Jul 29 13:17 GMT Daylight Time
+"LAPACK_Test_Summary" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin/xexample_DGESV_rowmajor
+99/102 Testing: example_DGESV_rowmajor
+99/102 Test: example_DGESV_rowmajor
+Command: ""
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/lapacke/example
+"example_DGESV_rowmajor" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"example_DGESV_rowmajor" end time: Jul 29 13:17 GMT Daylight Time
+"example_DGESV_rowmajor" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin/xexample_DGESV_colmajor
+100/102 Testing: example_DGESV_colmajor
+100/102 Test: example_DGESV_colmajor
+Command: ""
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/lapacke/example
+"example_DGESV_colmajor" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"example_DGESV_colmajor" end time: Jul 29 13:17 GMT Daylight Time
+"example_DGESV_colmajor" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin/xexample_DGELS_rowmajor
+101/102 Testing: example_DGELS_rowmajor
+101/102 Test: example_DGELS_rowmajor
+Command: ""
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/lapacke/example
+"example_DGELS_rowmajor" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"example_DGELS_rowmajor" end time: Jul 29 13:17 GMT Daylight Time
+"example_DGELS_rowmajor" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/bin/xexample_DGELS_colmajor
+102/102 Testing: example_DGELS_colmajor
+102/102 Test: example_DGELS_colmajor
+Command: ""
+Directory: D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/lapacke/example
+"example_DGELS_colmajor" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"example_DGELS_colmajor" end time: Jul 29 13:17 GMT Daylight Time
+"example_DGELS_colmajor" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jul 29 13:17 GMT Daylight Time

@@ -1,0 +1,3 @@
+D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/CMakeFiles/FortranCInterface/CMakeFiles/FortranCInterface.dir
+D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/CMakeFiles/FortranCInterface/CMakeFiles/myfort.dir
+D:/Spectral/Spectral/Spectral/lapack-3.5.0/BUILD/CMakeFiles/FortranCInterface/CMakeFiles/symbols.dir

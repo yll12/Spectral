@@ -1,9 +1,2 @@
 ﻿  code11.cpp
-d:\spectral\spectral\spectral\code11.cpp(119): warning C4018: '<' : signed/unsigned mismatch
-d:\spectral\spectral\spectral\code11.cpp(121): warning C4018: '<' : signed/unsigned mismatch
-d:\spectral\spectral\spectral\code11.cpp(141): warning C4018: '<' : signed/unsigned mismatch
-d:\spectral\spectral\spectral\code11.cpp(143): warning C4018: '<' : signed/unsigned mismatch
-d:\spectral\spectral\spectral\code11.cpp(150): warning C4018: '<' : signed/unsigned mismatch
-d:\spectral\spectral\spectral\code11.cpp(152): warning C4018: '<' : signed/unsigned mismatch
-d:\spectral\spectral\spectral\code11.cpp(159): warning C4018: '<' : signed/unsigned mismatch
   Spectral.vcxproj -> D:\Spectral\Spectral\Debug\Spectral.lib

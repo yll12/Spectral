@@ -1,0 +1,193 @@
+BLAS-xblat1s 1 0.30703
+BLAS-xblat2s 1 0.160015
+BLAS-xblat3s 1 0.172016
+BLAS-xblat1d 1 0.153015
+BLAS-xblat2d 1 0.152016
+BLAS-xblat3d 1 0.167017
+BLAS-xblat1c 1 0.155016
+BLAS-xblat2c 1 0.151014
+BLAS-xblat3c 1 0.164017
+BLAS-xblat1z 1 0.178019
+BLAS-xblat2z 1 0.163017
+BLAS-xblat3z 1 0.159016
+LAPACK-xlintsts_stest_in 0 0
+LAPACK-xlintstrfs_stest_rfp_in 0 0
+LAPACK-xeigtsts_nep_in 0 0
+LAPACK-xeigtsts_sep_in 0 0
+LAPACK-xeigtsts_svd_in 0 0
+LAPACK-xeigtsts_sec_in 0 0
+LAPACK-xeigtsts_sed_in 0 0
+LAPACK-xeigtsts_sgg_in 0 0
+LAPACK-xeigtsts_sgd_in 0 0
+LAPACK-xeigtsts_ssb_in 0 0
+LAPACK-xeigtsts_ssg_in 0 0
+LAPACK-xeigtsts_sbal_in 0 0
+LAPACK-xeigtsts_sbak_in 0 0
+LAPACK-xeigtsts_sgbal_in 0 0
+LAPACK-xeigtsts_sgbak_in 0 0
+LAPACK-xeigtsts_sbb_in 0 0
+LAPACK-xeigtsts_glm_in 0 0
+LAPACK-xeigtsts_gqr_in 0 0
+LAPACK-xeigtsts_gsv_in 0 0
+LAPACK-xeigtsts_csd_in 0 0
+LAPACK-xeigtsts_lse_in 0 0
+LAPACK-xlintstd_dtest_in 0 0
+LAPACK-xlintstrfd_dtest_rfp_in 0 0
+LAPACK-xeigtstd_nep_in 0 0
+LAPACK-xeigtstd_sep_in 0 0
+LAPACK-xeigtstd_svd_in 0 0
+LAPACK-xeigtstd_dec_in 0 0
+LAPACK-xeigtstd_ded_in 0 0
+LAPACK-xeigtstd_dgg_in 0 0
+LAPACK-xeigtstd_dgd_in 0 0
+LAPACK-xeigtstd_dsb_in 0 0
+LAPACK-xeigtstd_dsg_in 0 0
+LAPACK-xeigtstd_dbal_in 0 0
+LAPACK-xeigtstd_dbak_in 0 0
+LAPACK-xeigtstd_dgbal_in 0 0
+LAPACK-xeigtstd_dgbak_in 0 0
+LAPACK-xeigtstd_dbb_in 0 0
+LAPACK-xeigtstd_glm_in 0 0
+LAPACK-xeigtstd_gqr_in 0 0
+LAPACK-xeigtstd_gsv_in 0 0
+LAPACK-xeigtstd_csd_in 0 0
+LAPACK-xeigtstd_lse_in 0 0
+LAPACK-xlintstc_ctest_in 0 0
+LAPACK-xlintstrfc_ctest_rfp_in 0 0
+LAPACK-xeigtstc_nep_in 0 0
+LAPACK-xeigtstc_sep_in 0 0
+LAPACK-xeigtstc_svd_in 0 0
+LAPACK-xeigtstc_cec_in 0 0
+LAPACK-xeigtstc_ced_in 0 0
+LAPACK-xeigtstc_cgg_in 0 0
+LAPACK-xeigtstc_cgd_in 0 0
+LAPACK-xeigtstc_csb_in 0 0
+LAPACK-xeigtstc_csg_in 0 0
+LAPACK-xeigtstc_cbal_in 0 0
+LAPACK-xeigtstc_cbak_in 0 0
+LAPACK-xeigtstc_cgbal_in 0 0
+LAPACK-xeigtstc_cgbak_in 0 0
+LAPACK-xeigtstc_cbb_in 0 0
+LAPACK-xeigtstc_glm_in 0 0
+LAPACK-xeigtstc_gqr_in 0 0
+LAPACK-xeigtstc_gsv_in 0 0
+LAPACK-xeigtstc_csd_in 0 0
+LAPACK-xeigtstc_lse_in 0 0
+LAPACK-xlintstz_ztest_in 0 0
+LAPACK-xlintstrfz_ztest_rfp_in 0 0
+LAPACK-xeigtstz_nep_in 0 0
+LAPACK-xeigtstz_sep_in 0 0
+LAPACK-xeigtstz_svd_in 0 0
+LAPACK-xeigtstz_zec_in 0 0
+LAPACK-xeigtstz_zed_in 0 0
+LAPACK-xeigtstz_zgg_in 0 0
+LAPACK-xeigtstz_zgd_in 0 0
+LAPACK-xeigtstz_zsb_in 0 0
+LAPACK-xeigtstz_zsg_in 0 0
+LAPACK-xeigtstz_zbal_in 0 0
+LAPACK-xeigtstz_zbak_in 0 0
+LAPACK-xeigtstz_zgbal_in 0 0
+LAPACK-xeigtstz_zgbak_in 0 0
+LAPACK-xeigtstz_zbb_in 0 0
+LAPACK-xeigtstz_glm_in 0 0
+LAPACK-xeigtstz_gqr_in 0 0
+LAPACK-xeigtstz_gsv_in 0 0
+LAPACK-xeigtstz_csd_in 0 0
+LAPACK-xeigtstz_lse_in 0 0
+LAPACK-xlintstzc_zctest_in 0 0
+LAPACK_Test_Summary 0 0
+example_DGESV_rowmajor 0 0
+example_DGESV_colmajor 0 0
+example_DGELS_rowmajor 0 0
+example_DGELS_colmajor 0 0
+---
+LAPACK-xlintsts_stest_in
+LAPACK-xlintstrfs_stest_rfp_in
+LAPACK-xeigtsts_nep_in
+LAPACK-xeigtsts_sep_in
+LAPACK-xeigtsts_svd_in
+LAPACK-xeigtsts_sec_in
+LAPACK-xeigtsts_sed_in
+LAPACK-xeigtsts_sgg_in
+LAPACK-xeigtsts_sgd_in
+LAPACK-xeigtsts_ssb_in
+LAPACK-xeigtsts_ssg_in
+LAPACK-xeigtsts_sbal_in
+LAPACK-xeigtsts_sbak_in
+LAPACK-xeigtsts_sgbal_in
+LAPACK-xeigtsts_sgbak_in
+LAPACK-xeigtsts_sbb_in
+LAPACK-xeigtsts_glm_in
+LAPACK-xeigtsts_gqr_in
+LAPACK-xeigtsts_gsv_in
+LAPACK-xeigtsts_csd_in
+LAPACK-xeigtsts_lse_in
+LAPACK-xlintstd_dtest_in
+LAPACK-xlintstrfd_dtest_rfp_in
+LAPACK-xeigtstd_nep_in
+LAPACK-xeigtstd_sep_in
+LAPACK-xeigtstd_svd_in
+LAPACK-xeigtstd_dec_in
+LAPACK-xeigtstd_ded_in
+LAPACK-xeigtstd_dgg_in
+LAPACK-xeigtstd_dgd_in
+LAPACK-xeigtstd_dsb_in
+LAPACK-xeigtstd_dsg_in
+LAPACK-xeigtstd_dbal_in
+LAPACK-xeigtstd_dbak_in
+LAPACK-xeigtstd_dgbal_in
+LAPACK-xeigtstd_dgbak_in
+LAPACK-xeigtstd_dbb_in
+LAPACK-xeigtstd_glm_in
+LAPACK-xeigtstd_gqr_in
+LAPACK-xeigtstd_gsv_in
+LAPACK-xeigtstd_csd_in
+LAPACK-xeigtstd_lse_in
+LAPACK-xlintstc_ctest_in
+LAPACK-xlintstrfc_ctest_rfp_in
+LAPACK-xeigtstc_nep_in
+LAPACK-xeigtstc_sep_in
+LAPACK-xeigtstc_svd_in
+LAPACK-xeigtstc_cec_in
+LAPACK-xeigtstc_ced_in
+LAPACK-xeigtstc_cgg_in
+LAPACK-xeigtstc_cgd_in
+LAPACK-xeigtstc_csb_in
+LAPACK-xeigtstc_csg_in
+LAPACK-xeigtstc_cbal_in
+LAPACK-xeigtstc_cbak_in
+LAPACK-xeigtstc_cgbal_in
+LAPACK-xeigtstc_cgbak_in
+LAPACK-xeigtstc_cbb_in
+LAPACK-xeigtstc_glm_in
+LAPACK-xeigtstc_gqr_in
+LAPACK-xeigtstc_gsv_in
+LAPACK-xeigtstc_csd_in
+LAPACK-xeigtstc_lse_in
+LAPACK-xlintstz_ztest_in
+LAPACK-xlintstrfz_ztest_rfp_in
+LAPACK-xeigtstz_nep_in
+LAPACK-xeigtstz_sep_in
+LAPACK-xeigtstz_svd_in
+LAPACK-xeigtstz_zec_in
+LAPACK-xeigtstz_zed_in
+LAPACK-xeigtstz_zgg_in
+LAPACK-xeigtstz_zgd_in
+LAPACK-xeigtstz_zsb_in
+LAPACK-xeigtstz_zsg_in
+LAPACK-xeigtstz_zbal_in
+LAPACK-xeigtstz_zbak_in
+LAPACK-xeigtstz_zgbal_in
+LAPACK-xeigtstz_zgbak_in
+LAPACK-xeigtstz_zbb_in
+LAPACK-xeigtstz_glm_in
+LAPACK-xeigtstz_gqr_in
+LAPACK-xeigtstz_gsv_in
+LAPACK-xeigtstz_csd_in
+LAPACK-xeigtstz_lse_in
+LAPACK-xlintstzc_zctest_in
+LAPACK_Test_Summary
+example_DGESV_rowmajor
+example_DGESV_colmajor
+example_DGELS_rowmajor
+example_DGELS_colmajor

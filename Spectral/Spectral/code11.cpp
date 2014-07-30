@@ -3,6 +3,7 @@
 #include "derivativeMatrix.h"
 #include "utils.h"
 #include <Eigen\Dense>
+#include <Eigen\Eigenvalues>
 #include <cmath>
 #include <utility>
 
@@ -20,6 +21,13 @@ using namespace std;
 #include <sstream>
 #include <cmath>
 
+
+extern "C" void dggev_(const char* JOBVL, const char* JOBVR, const int* N,
+	const double* A, const int* LDA, const double* B, const int* LDB,
+	double* ALPHAR, double* ALPHAI, double* BETA,
+	double* VL, const int* LDVL, double* VR, const int* LDVR,
+	double* WORK, const int* LWORK, int* INFO);
+	
 string FPClass(double x)
 {
 	int i = _fpclass(x);
@@ -116,56 +124,94 @@ namespace Code11
 		MatrixXd m2 = MatrixXd::Identity(n, n);
 		
 		m2 *= -rho;
-		for (size_t i = 0; i < n; i++)
-		{
-			for (size_t j = 0; j < n; j++) {
-				if (i != j) {
-					m2(i, j) = abs(m2(i, j));
-				}
-			}
-		}
-		
 		m2(0, 0) = 0;
 		m2(n - 1, n - 1) = 0;
 
 		UtilityMethods::eigenToCSV(l, "../../l11cpp.csv");
 		UtilityMethods::eigenToCSV(m2, "../../m211cpp.csv");
 
-		cout << m2 << endl;
+		GeneralizedEigenSolver<MatrixXd> solver;
 
-		GeneralizedSelfAdjointEigenSolver<MatrixXd> solver(l, m2);
+		l.transposeInPlace();
 
-		MatrixXd p = solver.eigenvectors();
-		MatrixXd e = solver.eigenvalues();
+		solver.compute(l, m2);
 
-		for (size_t i = 0; i < n; i++)
-		{
-			for (size_t j = 0; j < n; j++) {
-				cout << HexDump(m2(i, j)) << " _fpclass(z) = " << FPClass(m2(i, j)) << "\n";
-			}
-		}
+		//MatrixXd p = solver.eigenvectors();
+		MatrixXd p; //= solver.alphas();
+		MatrixXd e; //= solver.eigenvalues();
+
+		MatrixXd A, B, v, lambda;
+
+		A = l;
+
+		B = m2;
+
+		A.transposeInPlace();
+		B.transposeInPlace();
+
+		int N = A.cols(); // Number of columns of A and B. Number of rows of v.
+
+		v.resize(N, N);
+		lambda.resize(N, 3);
+
+		int LDA = A.outerStride();
+		int LDB = B.outerStride();
+		int LDV = v.outerStride();
+
+		double WORKDUMMY;
+		int LWORK = -1; // Request optimum work size.
+		int INFO = 0;
+
+		double * alphar = const_cast<double*>(lambda.col(0).data());
+		double * alphai = const_cast<double*>(lambda.col(1).data());
+		double * beta = const_cast<double*>(lambda.col(2).data());
+
+		cout << "Reached here" << endl;
+
+		// Get the optimum work size.
+		dggev_("N", "V", &N, A.data(), &LDA, B.data(), &LDB, alphar, alphai, beta, 0, &LDV, v.data(), &LDV, &WORKDUMMY, &LWORK, &INFO);
+
+		LWORK = int(WORKDUMMY) + 32;
+		VectorXd WORK(LWORK);
+
+		dggev_("N", "V", &N, A.data(), &LDA, B.data(), &LDB, alphar, alphai, beta, 0, &LDV, v.data(), &LDV, WORK.data(), &LWORK, &INFO);
+
+		p = v;
+		// The eigenvalues are stored as: (lambda(:, 1) + lambda(:, 2)*i)./lambda(:, 3)
+		e = lambda;
+		complex<double> i(0, 1);
+		cout << e << endl;
+		MatrixXd col1, col2;
+		col1 = e.col(0);
+		col2 = e.col(2);
+		e = col1.array()  / col2.array();
 
 		cout << "p: \n" << endl;
-
-		for (size_t i = 0; i < n; i++)
+		cout << p << endl;
+		/*
+		for (int i = 0; i < n; i++)
 		{
-			for (size_t j = 0; j < n; j++) {
+			for (int j = 0; j < n; j++) {
 				cout << HexDump(p(i, j)) << " _fpclass(z) = " << FPClass(p(i, j)) << "\n";
 			}
 		}
+		*/
 
 		cout << "e: \n" << endl;
-
-		for (size_t i = 0; i < n; i++)
+		cout << e << endl;
+		/*
+		for (int i = 0; i < n; i++)
 		{
 			cout << HexDump(e(i, 0)) << " _fpclass(z) = " << FPClass(e(i, 0)) << "\n";
 		}
+		*/
 
-		MatrixXd w = e.diagonal().cwiseSqrt();
+		//MatrixXd w = e.diagonal().cwiseSqrt();
 
+		UtilityMethods::eigenToCSV(lambda, "../../lambda11cpp.csv");
 		UtilityMethods::eigenToCSV(p, "../../p11cpp.csv");
 		UtilityMethods::eigenToCSV(e, "../../e11cpp.csv");
-		UtilityMethods::eigenToCSV(w, "../../w11cpp.csv");
+		//UtilityMethods::eigenToCSV(w, "../../w11cpp.csv");
 
 	}
 
