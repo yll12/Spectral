@@ -104,12 +104,12 @@ namespace OrthogonalDispcyl
 
 		MatrixXcd p, e;
 
-		pair<MatrixXcd, MatrixXcd> eig = UtilityMethods::matlab_ceig(l, m2);
+		//pair<MatrixXcd, MatrixXcd> eig = UtilityMethods::matlab_ceig(l, m2);
 
-		p = eig.first;
-		e = eig.second;
+		//p = eig.first;
+		//e = eig.second;
 
-		MatrixXcd w = e.diagonal().cwiseSqrt();
+		//MatrixXcd w = e.diagonal().cwiseSqrt();
 	}
 
 }

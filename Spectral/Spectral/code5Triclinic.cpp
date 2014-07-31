@@ -122,16 +122,16 @@ namespace Code5Triclinic
 
 		MatrixXcd p, e;
 
-		pair<MatrixXcd, MatrixXcd> eig = UtilityMethods::matlab_ceig(l, m2);
+		//pair<MatrixXcd, MatrixXcd> eig = UtilityMethods::matlab_eig(l, m2);
 
-		p = eig.first;
-		e = eig.second;
+		//p = eig.first;
+		//e = eig.second;
 
-		MatrixXcd w = e.diagonal().cwiseSqrt();
+		//MatrixXcd w = e.diagonal().cwiseSqrt();
 
-		UtilityMethods::eigenToCSV(p, "../../p5cpp.csv");
-		UtilityMethods::eigenToCSV(e, "../../e5cpp.csv");
-		UtilityMethods::eigenToCSV(w, "../../w5cpp.csv");
+		//UtilityMethods::eigenToCSV(p, "../../p5cpp.csv");
+		//UtilityMethods::eigenToCSV(e, "../../e5cpp.csv");
+		//UtilityMethods::eigenToCSV(w, "../../w5cpp.csv");
 
 	}
 

@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Code11.h"
+#include "code12.h"
 #include "code5Triclinic.h"
 #include "utils.h"
 #include "spectral.h" 
@@ -67,8 +68,8 @@ int main()
 	cout << "chebdif(" << n << ", " << m  << ")= " << 
 		Spectral::SpectralMethods::chebdif(n, m) << endl;
 	*/
-	cout << "Reached here" << endl;
-	Code11::Code11Method::code11();
+	//Code11::Code11Method::code11();
+	Code12::Code12Method::code12();
 	//Code5Triclinic::Code5TriclinicMethods::code5Triclinic();
 
 	return 0;

@@ -1,4 +1,3 @@
-/*
 #include "utils.h"
 
 #include <fstream>
@@ -9,7 +8,33 @@ using namespace std;
 using namespace Eigen;
 namespace Utility
 {
-*/
+
+	std::pair<MatrixXcd, MatrixXcd> UtilityMethods::matlab_ceig(const MatrixXcd& A, const MatrixXcd& B)
+	{
+		MatrixXcd v, lambda;
+
+		int N = A.cols(); // Number of columns of A and B. Number of rows of v.
+
+		char jobvl = 'N', jobvr = 'V';
+		int n, lda, ldb, ldvl, ldvr, lwork, info;
+		n = lda = A.rows();
+		ldb = B.rows();
+		ldvl = 1;
+		ldvr = n;
+		lwork = std::max(1, n*n + 64); // This may be choosen better!
+		MatrixXcd work(lwork, 1);
+		MatrixXd rwork(8 * n, 1); // This may be choosen better
+		MatrixXcd alpha(n, 1), beta(n, 1);
+		MatrixXcd vl(1, 1), vr(n, n);
+		zggev_(&jobvl, &jobvr, &n, A.data(), &lda,
+			B.data(), &ldb, alpha.data(), beta.data(), vl.data(),
+			&ldvl, vr.data(), &ldvr, work.data(), &lwork,
+			rwork.data(), &info);
+		lambda = alpha.cwiseQuotient(beta);
+		v = vr;
+
+		return std::make_pair(v, lambda);
+	}
 
 	/*!
 	*  Write Eigen Matrices to files
@@ -61,7 +86,7 @@ namespace Utility
 		return std::make_pair(v, d);
 
 	}
+	*/
 
 }
-	*/
 

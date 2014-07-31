@@ -7,6 +7,20 @@
 #include <fstream>
 #include <iostream>
 #include <iomanip>
+#include <complex>
+
+extern "C" void dggev_(const char* JOBVL, const char* JOBVR, const int* N,
+	const double* A, const int* LDA, const double* B, const int* LDB,
+	double* ALPHAR, double* ALPHAI, double* BETA,
+	double* VL, const int* LDVL, double* VR, const int* LDVR,
+	double* WORK, const int* LWORK, int* INFO);
+
+extern "C" void zggev_(const char *jobvl, const char *jobvr, int *n, const std::complex<double> *a,
+		int *lda, const std::complex<double> *b, int *ldb, std::complex<double> *alpha,
+		std::complex<double> *beta, std::complex<double> *vl,
+		int *ldvl, std::complex<double> *vr, int *ldvr,
+		std::complex<double> *work, int *lwork, double *rwork, int *info);
+
 
 namespace Utility
 {
@@ -37,13 +51,9 @@ namespace Utility
 		// TODO: Comment
 		// [V,D] = eig(A,B)
 		template <typename Derived>
-		static std::pair<Eigen::MatrixXcd, Eigen::MatrixXcd> matlab_ceig(const Eigen::MatrixBase<Derived>& A, const Eigen::MatrixBase<Derived>& B);
+		static std::pair<Derived, Derived> matlab_eig(const Derived& A, const Derived& B);
 
-		// TODO: Comment
-		// [V,D] = eig(A,B)
-		template <typename Derived>
-		static std::pair<Eigen::MatrixXd, Eigen::MatrixXd> matlab_eig(const Eigen::MatrixBase<Derived>& A, const Eigen::MatrixBase<Derived>& B);
-
+		static std::pair<Eigen::MatrixXcd, Eigen::MatrixXcd> matlab_ceig(const Eigen::MatrixXcd& A, const Eigen::MatrixXcd& B);
 	};
 
 	template <typename Derived>
@@ -66,7 +76,7 @@ namespace Utility
 		return x.rowwise().reverse().eval();
 	}
 	
-	template<typename Derived>
+	template <typename Derived>
 	typename Derived UtilityMethods::matlab_flipud(const Eigen::MatrixBase<Derived>& x)
 	{
 		return x.colwise().reverse().eval();
@@ -74,28 +84,40 @@ namespace Utility
 	
 	// [V,D] = eig(A,B)
 	template <typename Derived>
-	std::pair<Eigen::MatrixXcd, Eigen::MatrixXcd> UtilityMethods::matlab_ceig(const Eigen::MatrixBase<Derived>& A, const Eigen::MatrixBase<Derived>& B)
+	std::pair<typename Derived, typename Derived> UtilityMethods::matlab_eig(const Derived& A, const Derived& B)
 	{
-		const Eigen::GeneralizedSelfAdjointEigenSolver<Derived> solver(A, B);
-	
-		const Eigen::MatrixXcd v = solver.eigenvectors().cast<complex<double>>();
-		const Eigen::MatrixXcd d = solver.eigenvalues().cast<complex<double>>();
-	
+		Derived v, lambda;
+
+		int N = A.cols(); // Number of columns of A and B. Number of rows of v.
+
+		v.resize(N, N);
+		lambda.resize(N, 3);
+
+		int LDA = A.outerStride();
+		int LDB = B.outerStride();
+		int LDV = v.outerStride();
+
+		double WORKDUMMY;
+		int LWORK = -1; // Request optimum work size.
+		int INFO = 0;
+
+		double * alphar = const_cast<double*>(lambda.col(0).data());
+		double * alphai = const_cast<double*>(lambda.col(1).data());
+		double * beta = const_cast<double*>(lambda.col(2).data());
+
+		// Get the optimum work size.
+		dggev_("N", "V", &N, A.data(), &LDA, B.data(), &LDB, alphar, alphai, beta, 0, &LDV, v.data(), &LDV, &WORKDUMMY, &LWORK, &INFO);
+
+		LWORK = int(WORKDUMMY) + 32;
+		VectorXd WORK(LWORK);
+
+		dggev_("N", "V", &N, A.data(), &LDA, B.data(), &LDB, alphar, alphai, beta, 0, &LDV, v.data(), &LDV, WORK.data(), &LWORK, &INFO);
+		
+		Derived col1 = lambda.col(0);
+		Derived col3 = lambda.col(2);
+		Derived d = col1.array() / col3.array();
+		
 		return std::make_pair(v, d);
-	
-	}
-
-	// [V,D] = eig(A,B)
-	template <typename Derived>
-	std::pair<Eigen::MatrixXd, Eigen::MatrixXd> UtilityMethods::matlab_eig(const Eigen::MatrixBase<Derived>& A, const Eigen::MatrixBase<Derived>& B)
-	{
-		const Eigen::GeneralizedSelfAdjointEigenSolver<Derived> solver(A, B);
-
-		const Eigen::MatrixXd v = solver.eigenvectors();
-		const Eigen::MatrixXd d = solver.eigenvalues();
-
-		return std::make_pair(v, d);
-
 	}
 
 }
