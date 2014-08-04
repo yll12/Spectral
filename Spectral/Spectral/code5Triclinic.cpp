@@ -21,7 +21,7 @@ namespace Code5Triclinic
 
 		double rho = 8938.4;
 
-		MatrixXcd c(6, 6);
+		MatrixXcd c= MatrixXcd::Zero(6, 6);
 
 		c(0, 0) = 20.787e10;
 		c(0, 1) = 10.906e10;
@@ -47,7 +47,7 @@ namespace Code5Triclinic
 
 		double vt = sqrt(5.9472e10 / rho);
 
-		int n = 70;
+		int n = 10;
 
 		DerivativeMatrix result = SpectralMethods::chebdif(n, 2);
 
@@ -60,78 +60,116 @@ namespace Code5Triclinic
 
 		MatrixXcd o = MatrixXcd::Zero(n, n);
 
-		MatrixXcd k = MatrixXcd::Zero(1, 1);
+		int kmin = 0;
+		int kmax = 35;
 
-		int m = 0;
+		MatrixXcd k = MatrixXcd::Zero(1, 4201);
+
+		{
+			double i;
+			int j;
+			for (i = 0, j = 0; j <= 4.2e3; i += (kmax - kmin) / 4.2e3, j++)
+			{
+				k(0, j) = i;
+			}
+		
+		}
+
+		k = k.cwiseProduct(k.cwiseProduct(k));
 
 		complex<double> i(0, 1);
 
-		MatrixXcd l11 = -pow(k(0, m), 2) * c(4, 4) * MatrixXcd::Identity(n, n) + 2.0 * c(4, 5) * i * k(0, m) * d1 + c(5, 5) * d2;
-		MatrixXcd l12 = -pow(k(0, m), 2) * c(3, 4) * MatrixXcd::Identity(n, n) + (c(3, 5) + c(1, 4)) * i * k(0, m) * d1 + c(1, 5) * d2;
-		MatrixXcd l13 = -pow(k(0, m), 2) * c(2, 4) * MatrixXcd::Identity(n, n) + (c(2, 5) + c(3, 4)) * i * k(0, m) * d1 + c(3, 5) * d2;
+		for (int m = 0; m <= k.cols() - 1; m+= 100)
+		{
+			MatrixXcd l11 = -pow(k(0, m), 2) * c(4, 4) * MatrixXcd::Identity(n, n) + 2.0 * c(4, 5) * i * k(0, m) * d1 + c(5, 5) * d2;
+			MatrixXcd l12 = -pow(k(0, m), 2) * c(3, 4) * MatrixXcd::Identity(n, n) + (c(3, 5) + c(1, 4)) * i * k(0, m) * d1 + c(1, 5) * d2;
+			MatrixXcd l13 = -pow(k(0, m), 2) * c(2, 4) * MatrixXcd::Identity(n, n) + (c(2, 5) + c(3, 4)) * i * k(0, m) * d1 + c(3, 5) * d2;
 
-		MatrixXcd l22 = -pow(k(0, m), 2) * c(3, 3) * MatrixXcd::Identity(n, n) + 2.0 * c(1, 3) * i * k(0, m) * d1 + c(1, 1) * d2;
-		MatrixXcd l23 = -pow(k(0, m), 2) * c(2, 3) * MatrixXcd::Identity(n, n) + (c(1, 2) + c(3, 3)) * i * k(0, m)* d1 + c(1, 3) * d2;
+			MatrixXcd l22 = -pow(k(0, m), 2) * c(3, 3) * MatrixXcd::Identity(n, n) + 2.0 * c(1, 3) * i * k(0, m) * d1 + c(1, 1) * d2;
+			MatrixXcd l23 = -pow(k(0, m), 2) * c(2, 3) * MatrixXcd::Identity(n, n) + (c(1, 2) + c(3, 3)) * i * k(0, m)* d1 + c(1, 3) * d2;
 
-		MatrixXcd l33 = -pow(k(0, m), 2) * c(2, 2) * MatrixXcd::Identity(n, n) + 2.0 * c(2, 3) * i * k(0, m) * d1 + c(3, 3) * d2;
+			MatrixXcd l33 = -pow(k(0, m), 2) * c(2, 2) * MatrixXcd::Identity(n, n) + 2.0 * c(2, 3) * i * k(0, m) * d1 + c(3, 3) * d2;
 
-		MatrixXcd lp;
+			MatrixXcd lp(l11.rows() + l12.rows() + l13.rows(), l11.cols() + l12.cols() + l13.cols());
 
-		lp << l11, l12, l13,
-			l12, l22, l23,
-			l13, l23, l33;
+			lp << l11, l12, l13,
+				l12, l22, l23,
+				l13, l23, l33;
 
-		MatrixXcd l = lp;
+			MatrixXcd l = lp;
 
-		MatrixXcd s11 = c(1, 5) * d1 + i * k(0, m) * c(1, 4) * MatrixXcd::Identity(n, n);
-		MatrixXcd s12 = c(1, 1) * d1 + i * k(0, m) * c(1, 3) * MatrixXcd::Identity(n, n);
-		MatrixXcd s13 = c(1, 3) * d1 + i * k(0, m) * c(1, 2) * MatrixXcd::Identity(n, n);
+			MatrixXcd s11 = c(1, 5) * d1 + i * k(0, m) * c(1, 4) * MatrixXcd::Identity(n, n);
+			MatrixXcd s12 = c(1, 1) * d1 + i * k(0, m) * c(1, 3) * MatrixXcd::Identity(n, n);
+			MatrixXcd s13 = c(1, 3) * d1 + i * k(0, m) * c(1, 2) * MatrixXcd::Identity(n, n);
 
-		MatrixXcd s21 = c(3, 5) * d1 + i * k(0, m) * c(3, 4) * MatrixXcd::Identity(n, n);
-		MatrixXcd s22 = c(1, 3) * d1 + i * k(0, m) * c(3, 3) * MatrixXcd::Identity(n, n);
-		MatrixXcd s23 = c(3, 3) * d1 + i * k(0, m) * c(2, 3) * MatrixXcd::Identity(n, n);
+			MatrixXcd s21 = c(3, 5) * d1 + i * k(0, m) * c(3, 4) * MatrixXcd::Identity(n, n);
+			MatrixXcd s22 = c(1, 3) * d1 + i * k(0, m) * c(3, 3) * MatrixXcd::Identity(n, n);
+			MatrixXcd s23 = c(3, 3) * d1 + i * k(0, m) * c(2, 3) * MatrixXcd::Identity(n, n);
 
-		MatrixXcd s31 = c(5, 5) * d1 + i * k(0, m) * c(4, 5) * MatrixXcd::Identity(n, n);
-		MatrixXcd s32 = c(1, 5) * d1 + i * k(0, m) * c(3, 5) * MatrixXcd::Identity(n, n);
-		MatrixXcd s33 = c(3, 5) * d1 + i * k(0, m) * c(2, 5) * MatrixXcd::Identity(n, n);
+			MatrixXcd s31 = c(5, 5) * d1 + i * k(0, m) * c(4, 5) * MatrixXcd::Identity(n, n);
+			MatrixXcd s32 = c(1, 5) * d1 + i * k(0, m) * c(3, 5) * MatrixXcd::Identity(n, n);
+			MatrixXcd s33 = c(3, 5) * d1 + i * k(0, m) * c(2, 5) * MatrixXcd::Identity(n, n);
 
-		MatrixXcd s;
+			MatrixXcd s(s11.rows() + s21.rows() + s31.rows(), s11.cols() + s12.cols() + s13.cols());
+
+			s << s31, s32, s33,
+				s11, s12, s13,
+				s21, s22, s23;
+
+			l.row(0) = s.row(0);
+			l.row(n - 1) = s.row(n - 1);
+
+			l.row(n) = s.row(n);
+			l.row(2 * n - 1) = s.row(2 * n - 1);
+
+			l.row(2 * n) = s.row(2 * n);
+			l.row(3 * n - 1) = s.row(3 * n - 1);
+
+			MatrixXcd mp = -rho*MatrixXcd::Identity(n, n);
+			mp(0, 0) = 0;
+			mp(n - 1, n - 1) = 0;
+
+			MatrixXcd m2(mp.rows() + o.rows() + o.rows(), mp.cols() + o.cols() + o.cols());
+
+			m2 << mp, o, o,
+				o, mp, o,
+				o, o, mp;
+
+			MatrixXcd p, e;
+
+			pair<MatrixXcd, MatrixXcd> eig = UtilityMethods::matlab_eig(l, m2);
+
+			p = eig.first;
+			e = eig.second;
+
+			MatrixXcd w = e.diagonal().cwiseSqrt();
+
+			// TODO: translate this
+
+			/*
+			for j = 1:1 : 2 * N;
+				W(j, (m + 1)) = w(j, 1);
+			end
+
+				
+			p(:, (m + 1)) = w(:, 1);
+			q = 1;
+			
+			for n = 1:2 * N
+
+				if p(n, (m + 1)) == 0;
+				q = q;
+				else
+					W(q, (m + 1)) = p(n, (m + 1));
+				q = q + 1;
+			end
+			*/
+		}
 		
-		s << s31, s32, s33,
-			s11, s12, s13,
-			s21, s22, s23;
+		//UtilityMethods::eigenToCSV(p, "../../p5cpp_n120.csv");
+		//UtilityMethods::eigenToCSV(e, "../../e5cpp_n120.csv");
+		//UtilityMethods::eigenToCSV(w, "../../w5cpp_n120.csv");
 
-		l.row(0) = s.row(0);
-		l.row(n - 1) = s.row(n - 1);
-
-		l.row(n) = s.row(n);
-		l.row(2 * n - 1) = s.row(2 * n - 1);
-
-		l.row(2 * n) = s.row(2 * n);
-		l.row(3 * n - 1) = s.row(3 * n - 1);
-
-		MatrixXcd mp = -rho*MatrixXcd::Identity(n, n); 
-		mp(0, 0) = 0; 
-		mp(n - 1, n - 1) = 0;
-
-		MatrixXcd m2;
-
-		m2 << mp, o, o,
-			o, mp, o,
-			o, o, mp;
-
-		MatrixXcd p, e;
-
-		//pair<MatrixXcd, MatrixXcd> eig = UtilityMethods::matlab_eig(l, m2);
-
-		//p = eig.first;
-		//e = eig.second;
-
-		//MatrixXcd w = e.diagonal().cwiseSqrt();
-
-		//UtilityMethods::eigenToCSV(p, "../../p5cpp.csv");
-		//UtilityMethods::eigenToCSV(e, "../../e5cpp.csv");
-		//UtilityMethods::eigenToCSV(w, "../../w5cpp.csv");
 
 	}
 

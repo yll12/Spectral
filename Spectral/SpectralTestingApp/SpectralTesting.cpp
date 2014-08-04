@@ -69,8 +69,8 @@ int main()
 		Spectral::SpectralMethods::chebdif(n, m) << endl;
 	*/
 	//Code11::Code11Method::code11();
-	Code12::Code12Method::code12();
-	//Code5Triclinic::Code5TriclinicMethods::code5Triclinic();
+	//Code12::Code12Method::code12();
+	Code5Triclinic::Code5TriclinicMethods::code5Triclinic();
 
 	return 0;
 }

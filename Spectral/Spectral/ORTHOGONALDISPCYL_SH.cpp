@@ -81,10 +81,10 @@ namespace OrthogonalDispcylsh
 
 		MatrixXd p, e;
 
-		pair<MatrixXd, MatrixXd> eig = UtilityMethods::matlab_eig(l, m2);
+		pair<MatrixXcd, MatrixXcd> eig = UtilityMethods::matlab_eig(l, m2);
 
-		p = eig.first;
-		e = eig.second;
+		p = eig.first.real();
+		e = eig.second.real();
 
 		MatrixXd w = e.diagonal().cwiseSqrt();
 	}

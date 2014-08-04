@@ -51,9 +51,8 @@ namespace Utility
 		// TODO: Comment
 		// [V,D] = eig(A,B)
 		template <typename Derived>
-		static std::pair<Derived, Derived> matlab_eig(const Derived& A, const Derived& B);
+		static std::pair<Eigen::MatrixXcd, Eigen::MatrixXcd> matlab_eig(const Derived& A, const Derived& B);
 
-		static std::pair<Eigen::MatrixXcd, Eigen::MatrixXcd> matlab_ceig(const Eigen::MatrixXcd& A, const Eigen::MatrixXcd& B);
 	};
 
 	template <typename Derived>
@@ -82,6 +81,7 @@ namespace Utility
 		return x.colwise().reverse().eval();
 	}
 	
+	/*
 	// [V,D] = eig(A,B)
 	template <typename Derived>
 	std::pair<typename Derived, typename Derived> UtilityMethods::matlab_eig(const Derived& A, const Derived& B)
@@ -119,7 +119,37 @@ namespace Utility
 		
 		return std::make_pair(v, d);
 	}
+	*/
 
+	// [V,D] = eig(A,B)
+	template <typename Derived>
+	std::pair<Eigen::MatrixXcd, Eigen::MatrixXcd> UtilityMethods::matlab_eig(const Derived& A, const Derived& B)
+	{
+		Eigen::MatrixXcd v, lambda;
+
+		Eigen::MatrixXcd temp_A = A.cast<complex<double>>();
+		Eigen::MatrixXcd temp_B = B.cast<complex<double>>();
+
+		char jobvl = 'N', jobvr = 'V';
+		int n, lda, ldb, ldvl, ldvr, lwork, info;
+		n = lda = A.rows();
+		ldb = B.rows();
+		ldvl = 1;
+		ldvr = n;
+		lwork = std::max(1, n*n + 64); // This may be choosen better!
+		Eigen::MatrixXcd work(lwork, 1);
+		Eigen::MatrixXd rwork(8 * n, 1); // This may be choosen better
+		Eigen::MatrixXcd alpha(n, 1), beta(n, 1);
+		Eigen::MatrixXcd vl(1, 1), vr(n, n);
+		zggev_(&jobvl, &jobvr, &n, temp_A.data(), &lda,
+			temp_B.data(), &ldb, alpha.data(), beta.data(), vl.data(),
+			&ldvl, vr.data(), &ldvr, work.data(), &lwork,
+			rwork.data(), &info);
+		lambda = alpha.cwiseQuotient(beta);
+		v = vr;
+
+		return std::make_pair(v, lambda);
+	}
 }
 
 #endif

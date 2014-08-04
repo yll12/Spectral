@@ -1,3 +1,4 @@
+/*
 #include "utils.h"
 
 #include <fstream>
@@ -86,7 +87,7 @@ namespace Utility
 		return std::make_pair(v, d);
 
 	}
-	*/
 
 }
 
+	*/

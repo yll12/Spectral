@@ -52,12 +52,12 @@ namespace Code12
 
 		int m = 0;
 
-		MatrixXcd l11 = d2 * c(2, 2) - pow(k(0, m), 2) * c(3, 3) * MatrixXcd::Identity(n, n);
+		MatrixXcd l11 = d2 * c(1, 1) - pow(k(0, m), 2) * c(3, 3) * MatrixXcd::Identity(n, n);
 		
 		complex<double> i(0, 1);
 
-		MatrixXcd l12 = d1 * i * k(0, m ) * (c(1, 2) + c(3, 3));
-		MatrixXcd l22 = -pow(k(0, m), 2) * c(2, 2) * MatrixXcd::Identity(n, n) + d2 * c(4, 4);
+		MatrixXcd l12 = d1 * i * k(0, m) * (c(1, 2) + c(3, 3));
+		MatrixXcd l22 = -pow(k(0, m), 2) * c(2, 2) * MatrixXcd::Identity(n, n) + d2 * c(3, 3);
 
 		MatrixXcd lp(l11.rows() + l12.rows(), l11.cols() + l12.cols());
 
@@ -92,18 +92,32 @@ namespace Code12
 
 		MatrixXcd p, e;
 
-		pair<MatrixXcd, MatrixXcd> eig = UtilityMethods::matlab_ceig(l, m2);
+		pair<MatrixXcd, MatrixXcd> eig = UtilityMethods::matlab_eig(l, m2);
 
 		p = eig.first;
 		e = eig.second;
 
-		MatrixXd w = e.cwiseSqrt().real();
+		MatrixXcd w = e.cwiseSqrt();
 
-		std::sort(w.data(), w.data() + w.size());
+
+		for (int i = 0; i < e.rows(); i++)
+		{
+			for (int j = 0; j < e.cols(); j++)
+			{
+				if (w(i, j).imag() != 0)
+				{
+					w(i, j) = 0;
+				}
+			}
+		}
+
+		MatrixXd w_2 = w.real();
+
+		std::sort(w_2.data(), w_2.data() + w_2.size());
 
 		UtilityMethods::eigenToCSV(p.real(), "../../p12cpp_n120.csv");
 		UtilityMethods::eigenToCSV(e.real(), "../../e12cpp_n120.csv");
-		UtilityMethods::eigenToCSV(w, "../../w12cpp_n120.csv");
+		UtilityMethods::eigenToCSV(w_2, "../../w12cpp_n120.csv");
 
 	}
 

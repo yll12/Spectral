@@ -49,11 +49,7 @@ namespace Code11
 
 		MatrixXd x = result.x;
 
-		MatrixXd temp(n, 1);
-
-		temp.fill(1);
-
-		x = (x + temp) * (h / 2);
+		x = (x.array() + 1).matrix() * (h / 2);
 
 		MatrixXd d1 = pow((h / 2), -1)*result.dm[0];
 		MatrixXd d2 = pow((h / 2), -2)*result.dm[1];
@@ -83,9 +79,9 @@ namespace Code11
 		m2(0, 0) = 0;
 		m2(n - 1, n - 1) = 0;
 
-		pair<MatrixXd, MatrixXd> eigs = Utility::UtilityMethods::matlab_eig(l, m2);
-		MatrixXd p = eigs.first;
-		MatrixXd e = eigs.second;
+		pair<MatrixXcd, MatrixXcd> eigs = Utility::UtilityMethods::matlab_eig(l, m2);
+		MatrixXd p = eigs.first.real();
+		MatrixXd e = eigs.second.real();
 
 		cout << "p: \n" << endl;
 		cout << p << endl;

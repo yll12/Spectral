@@ -55,4 +55,6 @@ Mp=-rho*eye(N); Mp(1,1)=0; Mp(N,N)=0;
 M=[Mp, O; O, Mp];
 
 [P,E]=eig(L,M);
-w=sort(real(sqrt(diag(E))));
+w=(sqrt(diag(E)));
+w=w(imag(w) == 0);
+w=sort(w);

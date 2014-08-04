@@ -15,7 +15,7 @@ Vt=sqrt(C(6,6)/rho);
 
 k=0;
 
-N=40;
+N=10;
 
 [x,D]=chebdif(N,2);
 x=(x+1)*(h/2);
