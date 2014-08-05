@@ -47,7 +47,7 @@ namespace Code5Triclinic
 
 		double vt = sqrt(5.9472e10 / rho);
 
-		int n = 10;
+		int n = 70;
 
 		DerivativeMatrix result = SpectralMethods::chebdif(n, 2);
 
@@ -63,12 +63,14 @@ namespace Code5Triclinic
 		int kmin = 0;
 		int kmax = 35;
 
-		MatrixXcd k = MatrixXcd::Zero(1, 4201);
+		const int steps = 4201;
+		
+		MatrixXcd k = MatrixXcd::Zero(1, steps);
 
 		{
 			double i;
 			int j;
-			for (i = 0, j = 0; j <= 4.2e3; i += (kmax - kmin) / 4.2e3, j++)
+			for (i = 0, j = 0; j <= 4.2e3; i += (kmax - kmin) / (double) steps, j++)
 			{
 				k(0, j) = i;
 			}
@@ -79,8 +81,11 @@ namespace Code5Triclinic
 
 		complex<double> i(0, 1);
 
-		for (int m = 0; m <= k.cols() - 1; m+= 100)
+		MatrixXd W = MatrixXd::Zero(2 * n, k.cols());
+
+		//for (int m = 0; m <= k.cols() - 101; m+= 10)
 		{
+			int m = 2;
 			MatrixXcd l11 = -pow(k(0, m), 2) * c(4, 4) * MatrixXcd::Identity(n, n) + 2.0 * c(4, 5) * i * k(0, m) * d1 + c(5, 5) * d2;
 			MatrixXcd l12 = -pow(k(0, m), 2) * c(3, 4) * MatrixXcd::Identity(n, n) + (c(3, 5) + c(1, 4)) * i * k(0, m) * d1 + c(1, 5) * d2;
 			MatrixXcd l13 = -pow(k(0, m), 2) * c(2, 4) * MatrixXcd::Identity(n, n) + (c(2, 5) + c(3, 4)) * i * k(0, m) * d1 + c(3, 5) * d2;
@@ -135,36 +140,32 @@ namespace Code5Triclinic
 				o, mp, o,
 				o, o, mp;
 
-			MatrixXcd p, e;
+			MatrixXd p, e;
 
 			pair<MatrixXcd, MatrixXcd> eig = UtilityMethods::matlab_eig(l, m2);
 
-			p = eig.first;
-			e = eig.second;
+			p = eig.first.real();
+			e = eig.second.real();
 
-			MatrixXcd w = e.diagonal().cwiseSqrt();
+			MatrixXd w = e.cwiseSqrt();
 
-			// TODO: translate this
+			std::sort(w.data(), w.data() + w.size());
 
-			/*
-			for j = 1:1 : 2 * N;
-				W(j, (m + 1)) = w(j, 1);
-			end
-
-				
-			p(:, (m + 1)) = w(:, 1);
-			q = 1;
+			MatrixXd p_(3 * n, steps);
+			p_.col(m) = w.col(0);
+			int q = 0;
 			
-			for n = 1:2 * N
+			for (int i = 0; i < 2 * n; i++)
+			{
+				if (p_(i, m) != 0) 
+				{
+					W(q, m) = p_(i, m);
+					q++;
+				}
 
-				if p(n, (m + 1)) == 0;
-				q = q;
-				else
-					W(q, (m + 1)) = p(n, (m + 1));
-				q = q + 1;
-			end
-			*/
+			}
 		}
+		UtilityMethods::eigenToCSV(W, "../../bigw5cpp_n70.csv");
 		
 		//UtilityMethods::eigenToCSV(p, "../../p5cpp_n120.csv");
 		//UtilityMethods::eigenToCSV(e, "../../e5cpp_n120.csv");
