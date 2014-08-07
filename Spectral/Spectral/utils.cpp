@@ -1,4 +1,4 @@
-/*
+
 #include "utils.h"
 
 #include <fstream>
@@ -9,7 +9,12 @@ using namespace std;
 using namespace Eigen;
 namespace Utility
 {
+	bool UtilityMethods::compare(const double& x, const double &y)
+	{
+		return !(std::isinf(x) || std::isnan(x)) && ((std::isinf(y) || std::isnan(y)) || x < y);
+	}
 
+	/*
 	std::pair<MatrixXcd, MatrixXcd> UtilityMethods::matlab_ceig(const MatrixXcd& A, const MatrixXcd& B)
 	{
 		MatrixXcd v, lambda;
@@ -36,7 +41,7 @@ namespace Utility
 
 		return std::make_pair(v, lambda);
 	}
-
+	
 	/*!
 	*  Write Eigen Matrices to files
 	*/
@@ -87,7 +92,6 @@ namespace Utility
 		return std::make_pair(v, d);
 
 	}
-
+	*/
 }
 
-	*/

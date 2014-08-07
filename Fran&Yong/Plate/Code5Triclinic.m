@@ -173,8 +173,7 @@ k = k.^3;
 xi=(kmax^3)*2*h; %range of x to be plotted
 
 % for m=0:100:(size(k,2)-1);
-m=2;
-    
+m=1300;
 %Differential Operator
 
 L11= -k(1,(m+1))^2*C(5,5)*eye(N) +2*C(5,6)*1i*k(1,(m+1))*D1            +C(6,6)*D2; 
@@ -287,12 +286,12 @@ end
 % grid on
 
 figure (3)
-%for m=0:100:(size(k,2)-500);
+% for m=0:100:(size(k,2)-500);
     for j=1:1:20 %range of modes plotted 
-        plot( (2*h*k(1,(m+1))/pi) , ((2*h*W(j,(m+1)))/(pi*Vt)), 'blue o' );%plots real part of wavenumber, defined as in Graff (8.1.13)
+        plot( (2*h*k(1,(m+1))/pi) , ((2*h*bigw5cppn70(j,(m+1)))/(pi*Vt)), 'red *' );%plots real part of wavenumber, defined as in Graff (8.1.13)
     hold on
     end
-%end
+% end
 axis([0 10 0 10])
 % axis([0 12 0 8])
 grid on

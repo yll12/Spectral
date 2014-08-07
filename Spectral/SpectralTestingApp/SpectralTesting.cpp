@@ -3,6 +3,7 @@
 #include "code12.h"
 #include "code5Triclinic.h"
 #include "utils.h"
+#include "ORTHOGONALDISPCYL.h"
 #include "spectral.h" 
 #include <Eigen/Dense>
 #define _CRTDBG_MAP_ALLOC
@@ -18,6 +19,16 @@ using namespace Eigen;
 using namespace Spectral;
 using namespace Utility;
 
+
+string numToStr(int n) {
+	string str(1, 'a' + n % 26);
+	n = n / 26;
+	while (n != 0) {
+		str = (char)('a' + (n - 1) % 26) + str;
+		n = (n - 1) / 26;
+	}
+	return str;
+}
 
 int main()
 {
@@ -70,6 +81,7 @@ int main()
 	*/
 	//Code11::Code11Method::code11();
 	//Code12::Code12Method::code12();
+	//cout << numToStr(1300) <<endl;
 	Code5Triclinic::Code5TriclinicMethods::code5Triclinic();
 
 	return 0;

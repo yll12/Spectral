@@ -22,7 +22,7 @@ namespace OrthogonalDispcyl
 		double b = 5.005;
 		double rho = 5300;
 
-		MatrixXcd c;
+		MatrixXcd c = MatrixXcd::Zero(6, 6);
 
 		c(0, 0) = 23.9e9;
 		c(0, 1) = 10.4e9;
@@ -34,7 +34,7 @@ namespace OrthogonalDispcyl
 		c(4, 4) = 6.6e9;
 		c(5, 5) = 7.6e9;
 
-		int n = 100;
+		int n = 70;
 
 		complex<double> vt = sqrt(c(5, 5) / rho);
 
@@ -44,15 +44,7 @@ namespace OrthogonalDispcyl
 
 		double h = b - a;
 
-		MatrixXcd a_temp(n, 1);
-
-		a_temp.fill(a);
-
-		MatrixXcd b_temp(n, 1);
-
-		b_temp.fill(b);
-
-		MatrixXcd r = (h * x + a_temp + b_temp) / 2;
+		MatrixXcd r = ((h * x).array() + a + b).matrix() / 2;
 
 		MatrixXcd d1 = (2 / h) * result.dm[0].cast<complex<double>>();
 		MatrixXcd d2 = pow((2 / h), 2) * result.dm[1].cast<complex<double>>();
@@ -71,7 +63,7 @@ namespace OrthogonalDispcyl
 		MatrixXcd l21 = i * k(0, m) * (c(0, 2) * d1 + c(1, 2) * r.array().pow(-1).matrix().diagonal() + c(4, 4)*(d1 + r.array().pow(-1).matrix().diagonal()));
 		MatrixXcd l22 = c(4, 4)*(d2 + r.array().pow(-1).matrix().diagonal() * d1) - pow(k(0, m), 2) * c(2, 2)*MatrixXcd::Identity(n, n);
 
-		MatrixXcd lp; 
+		MatrixXcd lp(l11.rows() + l21.rows(), l11.cols() + l12.cols());
 		
 		lp << l11, l12, 
 			l21, l22;
@@ -83,7 +75,7 @@ namespace OrthogonalDispcyl
 		MatrixXcd s21 = (i * k(0, m)*c(4, 4) * MatrixXcd::Identity(n, n));
 		MatrixXcd s22 = c(4, 4)*d1;
 		
-		MatrixXcd s;
+		MatrixXcd s(s11.rows() + s21.rows(), s11.cols() + s12.cols());
 			
 		s << s11, s12,
 		  s21, s22;
@@ -97,19 +89,26 @@ namespace OrthogonalDispcyl
 		mp(0, 0) = 0; 
 		mp(n - 1, n - 1) = 0;
 
-		MatrixXcd m2;
+		MatrixXcd m2(mp.rows() + o.rows(), mp.cols() + o.cols());
 
 		m2 << mp, o,
 			o, mp;
 
-		MatrixXcd p, e;
+		MatrixXd p, e;
 
-		//pair<MatrixXcd, MatrixXcd> eig = UtilityMethods::matlab_ceig(l, m2);
+		pair<MatrixXcd, MatrixXcd> eig = UtilityMethods::matlab_eig(l, m2);
 
-		//p = eig.first;
-		//e = eig.second;
+		p = eig.first.real();
+		e = eig.second.real();
 
-		//MatrixXcd w = e.diagonal().cwiseSqrt();
+		MatrixXd w = e.cwiseSqrt();
+
+		std::sort(w.data(), w.data() + w.size(), UtilityMethods::compare);
+
+		UtilityMethods::eigenToCSV(p, "../../p12cpp_n70.csv");
+		UtilityMethods::eigenToCSV(e, "../../e12cpp_n70.csv");
+		UtilityMethods::eigenToCSV(w, "../../w12cpp_n70.csv");
+
 	}
 
 }

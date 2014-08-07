@@ -53,6 +53,8 @@ namespace Utility
 		template <typename Derived>
 		static std::pair<Eigen::MatrixXcd, Eigen::MatrixXcd> matlab_eig(const Derived& A, const Derived& B);
 
+		// TODO: Comment
+		static bool compare(const double& x, const double& y);
 	};
 
 	template <typename Derived>
@@ -150,6 +152,7 @@ namespace Utility
 
 		return std::make_pair(v, lambda);
 	}
+
 }
 
 #endif
