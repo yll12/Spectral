@@ -43,7 +43,7 @@ namespace Code11
 		double vt = sqrt(c(5, 5) / rho);
 
 		MatrixXd k = MatrixXd::Zero(1,1);
-		int n = 10;
+		int n = 90;
 
 		DerivativeMatrix result = SpectralMethods::chebdif(n, 2);
 
@@ -82,12 +82,6 @@ namespace Code11
 		pair<MatrixXcd, MatrixXcd> eigs = Utility::UtilityMethods::matlab_eig(l, m2);
 		MatrixXd p = eigs.first.real();
 		MatrixXd e = eigs.second.real();
-
-		cout << "p: \n" << endl;
-		cout << p << endl;
-
-		cout << "e: \n" << endl;
-		cout << e << endl;
 
 		MatrixXd w = e.cwiseSqrt();
 

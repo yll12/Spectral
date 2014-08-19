@@ -47,7 +47,7 @@ namespace Code5Triclinic
 
 		double vt = sqrt(5.9472e10 / rho);
 
-		int n = 70;
+		int n = 90;
 
 		DerivativeMatrix result = SpectralMethods::chebdif(n, 2);
 
@@ -83,8 +83,10 @@ namespace Code5Triclinic
 
 		MatrixXd W = MatrixXd::Zero(2 * n, k.cols());
 
-		for (int m = 0; m <= k.cols() - 101; m+= 100)
+		//for (int m = 0; m <= k.cols() - 101; m+= 100)
+		//for (int m = 0; m <= 10; m++)
 		{
+			int m = 1757;
 			MatrixXcd l11 = -pow(k(0, m), 2) * c(4, 4) * MatrixXcd::Identity(n, n) + 2.0 * c(4, 5) * i * k(0, m) * d1 + c(5, 5) * d2;
 			MatrixXcd l12 = -pow(k(0, m), 2) * c(3, 4) * MatrixXcd::Identity(n, n) + (c(3, 5) + c(1, 4)) * i * k(0, m) * d1 + c(1, 5) * d2;
 			MatrixXcd l13 = -pow(k(0, m), 2) * c(2, 4) * MatrixXcd::Identity(n, n) + (c(2, 5) + c(3, 4)) * i * k(0, m) * d1 + c(3, 5) * d2;
@@ -167,9 +169,9 @@ namespace Code5Triclinic
 				}
 			}
 			
+		UtilityMethods::eigenToCSV(W.col(m), "../../bigw5cpp_n90.csv");
 		}
 
-		UtilityMethods::eigenToCSV(W, "../../bigw5cpp_n70.csv");
 		
 		//UtilityMethods::eigenToCSV(p, "../../p5cpp_n120.csv");
 		//UtilityMethods::eigenToCSV(e, "../../e5cpp_n120.csv");

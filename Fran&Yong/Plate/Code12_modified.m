@@ -14,7 +14,7 @@ C(6,6) = 7.6e10;
 
 Vt=sqrt(C(6,6)/rho); 
 
-N=10;
+N=80;
     
 [x,D]=chebdif(N,2);
 x=x*h;
