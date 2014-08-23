@@ -35,7 +35,7 @@ namespace Code12
 
 		complex<double> vt = sqrt(c(5, 5) / rho);
 
-		int n = 120;
+		int n = 90;
 
 		DerivativeMatrix result = SpectralMethods::chebdif(n, 2);
 
@@ -48,7 +48,27 @@ namespace Code12
 
 		MatrixXcd o = MatrixXcd::Zero(n, n);
 
-		MatrixXcd k = MatrixXcd::Zero(1, 1);
+		int kmin = 0;
+		int kmax = 35;
+
+		const int steps = 4201;
+
+		MatrixXcd k = MatrixXcd::Zero(1, steps);
+
+		{
+			double fixed = ((double)(kmax - kmin)) / (steps - 1);
+			double i;
+			int j;
+			for (i = 0, j = 0; j <= 4.2e3; i += fixed, j++)
+			{
+				k(0, j) = i;
+			}
+
+		}
+
+		k = k.cwiseProduct(k.cwiseProduct(k));
+
+		MatrixXd W = MatrixXd::Zero(2 * n, k.cols());
 
 		int m = 0;
 
@@ -90,34 +110,35 @@ namespace Code12
 		m2 << mp, o,
 			o, mp;
 
-		MatrixXcd p, e;
+		MatrixXd p, e;
 
 		pair<MatrixXcd, MatrixXcd> eig = UtilityMethods::matlab_eig(l, m2);
 
-		p = eig.first;
-		e = eig.second;
+		p = eig.first.real();
+		e = eig.second.real();
 
-		MatrixXcd w = e.cwiseSqrt();
+		MatrixXd w = e.cwiseSqrt();
 
+		std::sort(w.data(), w.data() + w.size(), UtilityMethods::compare);
 
-		for (int i = 0; i < e.rows(); i++)
+		MatrixXd p_(2 * n, steps);
+		p_.col(m) = w.col(0);
+		int q = 0;
+
+		for (int i = 0; i < 2 * n; i++)
 		{
-			for (int j = 0; j < e.cols(); j++)
+			if (p_(i, m) != 0)
 			{
-				if (w(i, j).imag() != 0)
-				{
-					w(i, j) = 0;
-				}
+				W(q, m) = p_(i, m);
+				q++;
 			}
 		}
 
-		MatrixXd w_2 = w.real();
+		UtilityMethods::eigenToCSV(W.col(m), "../../bigw12cpp_n90.csv");
 
-		std::sort(w_2.data(), w_2.data() + w_2.size());
-
-		UtilityMethods::eigenToCSV(p.real(), "../../p12cpp_n120.csv");
-		UtilityMethods::eigenToCSV(e.real(), "../../e12cpp_n120.csv");
-		UtilityMethods::eigenToCSV(w_2, "../../w12cpp_n120.csv");
+		//UtilityMethods::eigenToCSV(p.real(), "../../p12cpp_n120.csv");
+		//UtilityMethods::eigenToCSV(e.real(), "../../e12cpp_n120.csv");
+		//UtilityMethods::eigenToCSV(w_2, "../../w12cpp_n120.csv");
 
 	}
 

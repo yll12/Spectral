@@ -1,5 +1,4 @@
 %CODE 11
-
 %Anisotropic Plate 
 
 %case:
@@ -50,8 +49,8 @@ k = k.^3;
 xi=k.*2*h; %range of x to be plotted
 
 
-for N=70:5:70; %Integration points %Integration points    
-    
+% for N=70:5:70; %Integration points %Integration points    
+N=90;    
 % generate Chebyshev differentiation matrices
 [x,D]=chebdif(N,2);
 x=(x+1)*(h/2);
@@ -60,8 +59,8 @@ D2=((h/2)^-2)*D(:,:,2);
 
 O=zeros(N);
 
-for m=0:50:(size(k,2)-1);
-
+% for m=0:50:(size(k,2)-1);
+m=0;
     
 %Differential Operator
 Lp=-k(1,(m+1))^2*C(5,5)*eye(N)+C(6,6)*D2;
@@ -94,17 +93,17 @@ for n=1:N
         q=q+1;
     end
 end    
-end
+% end
 
 %storing data
-    if N==70
-        H=W; %data storaging matrix N==60
-    elseif N==75
-        J=W;  %data storaging matrix  N==70  
+%     if N==70
+%         H=W; %data storaging matrix N==60
+%     elseif N==75
+%         J=W;  %data storaging matrix  N==70  
+%     
+%     end
     
-    end
-    
-end
+% end
 
 % %  restoring for plotting
 % for m=0:1:(size(k,2)-1);
@@ -133,12 +132,12 @@ end
 % 
 % hold on
 figure(2)
-for m=0:50:(size(k,2)-500);
-    for j=1:1:25 %range of modes plotted 
-plot( (h*k(1,(m+1))/pi) , ((h*H(j,(m+1)))/(pi*Vt)), 'black o' );%plots real part of wavenumber, defined as in Graff (8.1.13)
+% for m=0:50:(size(k,2)-500);
+    for j=1:1:30 %range of modes plotted 
+plot( (h*k(1,(m+1))/pi) , ((h*bigw11cppn90(j,1))/(pi*Vt)), 'red *' );%plots real part of wavenumber, defined as in Graff (8.1.13)
 hold on
     end
-end
+% end
 axis([0 8 0 8])
 grid on
 

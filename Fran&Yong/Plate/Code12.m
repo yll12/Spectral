@@ -29,9 +29,9 @@ C(6,6) = 7.6e10;
 
 Vt=sqrt(C(6,6)/rho); 
 
-for N=70:5:75; %Integration points %Integration points    
+% for N=70:5:75; %Integration points %Integration points    
     
-    
+N=90;
 % generate Chebyshev differentiation matrices
 [x,D]=chebdif(N,2);
 x=x*h;
@@ -46,9 +46,8 @@ k = kmin:(kmax-kmin)/4.2e3:kmax;
 k = k.^3;
 xi=k.*2*h; %range of x to be plotted
 
-for m=0:1:(size(k,2)-1);
-
-    
+% for m=0:1:(size(k,2)-1);
+m=0;
 %Differential Operator
 
 L11=D2*C(2,2)-k(1,(m+1))^2*C(4,4)*eye(N);
@@ -99,17 +98,17 @@ for n=1:2*N
         q=q+1;
     end
 end    
-end
+% end
 
 %storing data
-    if N==70
-        H=W; %data storaging matrix N==60
-    elseif N==75
-        J=W;  %data storaging matrix  N==70  
+%     if N==70
+%         H=W; %data storaging matrix N==60
+%     elseif N==75
+%         J=W;  %data storaging matrix  N==70  
+%     
+%     end
     
-    end
-    
-end
+% end
 
 % %  restoring for plotting
 % for m=0:1:(size(k,2)-1);
@@ -137,12 +136,12 @@ end
 
 figure (2)
 hold on
-for m=0:1:(size(k,2)-500);
-    for j=1:1:25 %range of modes plotted 
-plot( (2*h*k(1,(m+1))/pi) , ((2*h*H(j,(m+1)))/(pi*Vt)), 'black' );%plots real part of wavenumber, defined as in Graff (8.1.13)
+% for m=0:1:(size(k,2)-500);
+    for j=1:1:30 %range of modes plotted 
+plot( (2*h*k(1,(m+1))/pi) , ((2*h*bigw12cppn90(j,(m+1)))/(pi*Vt)), 'red *' );%plots real part of wavenumber, defined as in Graff (8.1.13)
 hold on
     end
-end
+% end
 axis([0 8 0 8])
 grid on
 

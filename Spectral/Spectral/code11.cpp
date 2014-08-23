@@ -42,7 +42,6 @@ namespace Code11
 
 		double vt = sqrt(c(5, 5) / rho);
 
-		MatrixXd k = MatrixXd::Zero(1,1);
 		int n = 90;
 
 		DerivativeMatrix result = SpectralMethods::chebdif(n, 2);
@@ -55,6 +54,28 @@ namespace Code11
 		MatrixXd d2 = pow((h / 2), -2)*result.dm[1];
 
 		MatrixXd o = MatrixXd::Zero(n, n);
+
+		int kmin = 0;
+		int kmax = 18;
+
+		const int steps = 4201;
+
+		MatrixXd k = MatrixXd::Zero(1, steps);
+
+		{
+			double fixed = ((double)(kmax - kmin)) / (steps - 1);
+			double i;
+			int j;
+			for (i = 0, j = 0; j <= 4.2e3; i += fixed, j++)
+			{
+				k(0, j) = i;
+			}
+
+		}
+
+		k = k.cwiseProduct(k.cwiseProduct(k));
+
+		MatrixXd W = MatrixXd::Zero(n, k.cols());
 
 		// Set up m for loop
 
@@ -87,9 +108,24 @@ namespace Code11
 
 		std::sort(w.data(), w.data() + w.size());
 
-		UtilityMethods::eigenToCSV(p, "../../p11cpp_n10.csv");
-		UtilityMethods::eigenToCSV(e, "../../e11cpp_n10.csv");
-		UtilityMethods::eigenToCSV(w, "../../w11cpp_n10.csv");
+		MatrixXd p_(n, steps);
+		p_.col(m) = w.col(0);
+		int q = 0;
+
+		for (int i = 0; i < n; i++)
+		{
+			if (p_(i, m) != 0)
+			{
+				W(q, m) = p_(i, m);
+				q++;
+			}
+		}
+
+		UtilityMethods::eigenToCSV(W.col(m), "../../bigw11cpp_n90.csv");
+
+		//UtilityMethods::eigenToCSV(p, "../../p11cpp_n10.csv");
+		//UtilityMethods::eigenToCSV(e, "../../e11cpp_n10.csv");
+		//UtilityMethods::eigenToCSV(w, "../../w11cpp_n10.csv");
 
 	}
 

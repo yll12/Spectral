@@ -79,10 +79,11 @@ int main()
 	cout << "chebdif(" << n << ", " << m  << ")= " << 
 		Spectral::SpectralMethods::chebdif(n, m) << endl;
 	*/
+	//Spectral::SpectralMethods::chebdif(90, 2);
 	//Code11::Code11Method::code11();
-	//Code12::Code12Method::code12();
+	Code12::Code12Method::code12();
 	//cout << numToStr(1300) <<endl;
-	Code5Triclinic::Code5TriclinicMethods::code5Triclinic();
+	//Code5Triclinic::Code5TriclinicMethods::code5Triclinic();
 
 	return 0;
 }

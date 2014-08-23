@@ -68,9 +68,10 @@ namespace Code5Triclinic
 		MatrixXcd k = MatrixXcd::Zero(1, steps);
 
 		{
+			double fixed = ((double)(kmax - kmin)) / (steps - 1);
 			double i;
 			int j;
-			for (i = 0, j = 0; j <= 4.2e3; i += (kmax - kmin) / (double) steps, j++)
+			for (i = 0, j = 0; j <= 4.2e3; i += fixed, j++)
 			{
 				k(0, j) = i;
 			}
@@ -86,7 +87,7 @@ namespace Code5Triclinic
 		//for (int m = 0; m <= k.cols() - 101; m+= 100)
 		//for (int m = 0; m <= 10; m++)
 		{
-			int m = 1757;
+			int m = 0;
 			MatrixXcd l11 = -pow(k(0, m), 2) * c(4, 4) * MatrixXcd::Identity(n, n) + 2.0 * c(4, 5) * i * k(0, m) * d1 + c(5, 5) * d2;
 			MatrixXcd l12 = -pow(k(0, m), 2) * c(3, 4) * MatrixXcd::Identity(n, n) + (c(3, 5) + c(1, 4)) * i * k(0, m) * d1 + c(1, 5) * d2;
 			MatrixXcd l13 = -pow(k(0, m), 2) * c(2, 4) * MatrixXcd::Identity(n, n) + (c(2, 5) + c(3, 4)) * i * k(0, m) * d1 + c(3, 5) * d2;
@@ -150,11 +151,7 @@ namespace Code5Triclinic
 
 			MatrixXd w = e.cwiseSqrt();
 
-			UtilityMethods::eigenToCSV(w, "../../before_w5cpp_n70.csv");
-
 			std::sort(w.data(), w.data() + w.size(), UtilityMethods::compare);
-
-			UtilityMethods::eigenToCSV(w, "../../w5cpp_n70.csv");
 
 			MatrixXd p_(3 * n, steps);
 			p_.col(m) = w.col(0);

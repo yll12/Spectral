@@ -20,25 +20,24 @@ namespace Spectral
 {
 	DerivativeMatrix SpectralMethods::chebdif(int n, int m)
 	{
-
-		MatrixXd i = MatrixXd::Identity(n, n); // Identity Matrix i.
-
+	
 		int n1 = (int) floor(n / 2.0); // Indices used for flipping trick.	
-		int n2 = (int) ceil(n  / 2.0);
+		int n2 = (int) ceil(n / 2.0);
 	
 		MatrixXd th(n, 1); // Compute theta vector.
 
-		for (int i = 0; i < n; i++)
+		for (int j = 0; j < n; j++)
 		{
-		    th(i, 0) = i * M_PI / (n - 1);
+		    th(j, 0) = j * M_PI / (n - 1);
 		}
 
 		MatrixXd x(n, 1); // Compute Chebyshev points.
 
-		for (int index = 0, i = n - 1; i >= 1 - n; index++, i -= 2)
+		for (int index = 0, j = n - 1; j >= 1 - n; index++, j -= 2)
 		{
-			x(index, 0) = sin(M_PI * i / (2 * (n - 1)));
+			x(index, 0) = sin(M_PI * j / (2 * (n - 1)));
 		}
+
 
 		MatrixXd t(n, n);
 		t = (th / 2.0).replicate(1, n);

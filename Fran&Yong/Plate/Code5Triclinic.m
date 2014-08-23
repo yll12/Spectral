@@ -153,7 +153,6 @@ C(5,5) = 3.5110e10;
 C(5,6) = 1.6574e10;
 C(6,6) = 5.9472e10;
 
-
 Vt=sqrt(5.9472e10/rho); 
 
 N=90; %Integration points %Integration points    
@@ -176,7 +175,7 @@ xi=(kmax^3)*2*h; %range of x to be plotted
 % m=1300;
 %Differential Operator
 % for m=0:1:10;
-m=1757;
+m=0;
 L11= -k(1,(m+1))^2*C(5,5)*eye(N) +2*C(5,6)*1i*k(1,(m+1))*D1            +C(6,6)*D2; 
 L12= -k(1,(m+1))^2*C(4,5)*eye(N) +(C(4,6)+C(2,5))*1i*k(1,(m+1))*D1 +C(2,6)*D2; 
 L13= -k(1,(m+1))^2*C(3,5)*eye(N) +(C(3,6)+C(4,5))*1i*k(1,(m+1))*D1 +C(4,6)*D2; 
@@ -286,7 +285,7 @@ end
 figure (3)
 % for m=0:100:(size(k,2)-500);
     for j=1:1:30 %range of modes plotted 
-        plot( (2*h*k(1,(m+1))/pi) , ((2*h*W(j,(m+1)))/(pi*Vt)), 'blue o' );%plots real part of wavenumber, defined as in Graff (8.1.13)
+        plot( (2*h*k(1,(m+1))/pi) , ((2*h*bigw5cppn90(j,(m+1)))/(pi*Vt)), 'red *' );%plots real part of wavenumber, defined as in Graff (8.1.13)
     hold on
     end
 % end
