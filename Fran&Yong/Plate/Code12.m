@@ -134,16 +134,16 @@ end
 % % axis([0 12 0 8])
 % grid on
 
-figure (2)
-hold on
-% for m=0:1:(size(k,2)-500);
-    for j=1:1:30 %range of modes plotted 
-plot( (2*h*k(1,(m+1))/pi) , ((2*h*bigw12cppn90(j,(m+1)))/(pi*Vt)), 'red *' );%plots real part of wavenumber, defined as in Graff (8.1.13)
-hold on
-    end
-% end
-axis([0 8 0 8])
-grid on
+% figure (2)
+% hold on
+% % for m=0:1:(size(k,2)-500);
+%     for j=1:1:30 %range of modes plotted 
+% plot( (2*h*k(1,(m+1))/pi) , ((2*h*W(j,(m+1)))/(pi*Vt)), 'blue o' );%plots real part of wavenumber, defined as in Graff (8.1.13)
+% hold on
+%     end
+% % end
+% axis([0 8 0 8])
+% grid on
 
 
 % figure (3)

@@ -34,7 +34,7 @@ namespace OrthogonalDispcyl
 		c(4, 4) = 6.6e9;
 		c(5, 5) = 7.6e9;
 
-		int n = 70;
+		int n = 90;
 
 		complex<double> vt = sqrt(c(5, 5) / rho);
 
@@ -105,9 +105,9 @@ namespace OrthogonalDispcyl
 
 		std::sort(w.data(), w.data() + w.size(), UtilityMethods::compare);
 
-		UtilityMethods::eigenToCSV(p, "../../p12cpp_n70.csv");
-		UtilityMethods::eigenToCSV(e, "../../e12cpp_n70.csv");
-		UtilityMethods::eigenToCSV(w, "../../w12cpp_n70.csv");
+		//UtilityMethods::eigenToCSV(p, "../../p12cpp_n70.csv");
+		//UtilityMethods::eigenToCSV(e, "../../e12cpp_n70.csv");
+		//UtilityMethods::eigenToCSV(w, "../../w12cpp_n70.csv");
 
 	}
 

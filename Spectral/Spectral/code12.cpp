@@ -44,6 +44,7 @@ namespace Code12
 		x = x * h;
 
 		MatrixXcd d1 = pow(h, -1) * result.dm[0].cast<complex<double>>();
+
 		MatrixXcd d2 = pow(h, -2) * result.dm[1].cast<complex<double>>();
 
 		MatrixXcd o = MatrixXcd::Zero(n, n);

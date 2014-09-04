@@ -4,6 +4,7 @@
 #include "code5Triclinic.h"
 #include "utils.h"
 #include "ORTHOGONALDISPCYL.h"
+#include "cCode10TriclinicCORRECTED.h"
 #include "spectral.h" 
 #include <Eigen/Dense>
 #define _CRTDBG_MAP_ALLOC
@@ -79,11 +80,12 @@ int main()
 	cout << "chebdif(" << n << ", " << m  << ")= " << 
 		Spectral::SpectralMethods::chebdif(n, m) << endl;
 	*/
-	//Spectral::SpectralMethods::chebdif(90, 2);
+	//Spectral::SpectralMethods::chebdif(90, 1);
 	//Code11::Code11Method::code11();
-	Code12::Code12Method::code12();
+	//Code12::Code12Method::code12();
 	//cout << numToStr(1300) <<endl;
 	//Code5Triclinic::Code5TriclinicMethods::code5Triclinic();
+	Code10Triclinic::Code10TriclinicMethods::code10triclinic();
 
 	return 0;
 }

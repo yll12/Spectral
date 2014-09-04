@@ -56,7 +56,7 @@ namespace Spectral
 		MatrixXd top = dx.topRows(n2);
 		dx << dx.topRows(n1),
 			-UtilityMethods::matlab_flipud(UtilityMethods::matlab_fliplr(top));
-
+		
 		// Put 1's on the main diagonal of dx.
 		dx += MatrixXd::Identity(n, n);
 
@@ -100,9 +100,9 @@ namespace Spectral
 			MatrixXd j = c.cwiseProduct(d.diagonal().replicate(1, n)) - d;
 			d = (i + 1) * z.cwiseProduct(j); // Off-diagonals.
 			MatrixXd b = (-(d.transpose().colwise().sum()));
-			for (int j = 0; j < n; j++)
+			for (int q = 0; q < n; q++)
 			{
-				d(j, j) = b(0, j); // Correct main diagonal of D
+				d(q, q) = b(0, q); // Correct main diagonal of D
 			}
 			_dm[i] = d; // Store current D in DM
 		} 
