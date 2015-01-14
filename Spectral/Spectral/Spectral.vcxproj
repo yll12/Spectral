@@ -87,6 +87,7 @@
     <ClInclude Include="code12.h" />
     <ClInclude Include="code5Triclinic.h" />
     <ClInclude Include="cCode10TriclinicCORRECTED.h" />
+    <ClInclude Include="TRICLINIC_KV_50.h" />
     <ClInclude Include="ORTHOGONALDISPCYL_SH.h" />
     <ClInclude Include="ORTHOGONALDISPCYL.h" />
     <ClInclude Include="Utils.h" />
@@ -100,6 +101,7 @@
     <ClCompile Include="code5Triclinic.cpp" />
     <ClCompile Include="ORTHOGONALDISPCYL_SH.cpp" />
     <ClCompile Include="ORTHOGONALDISPCYL.cpp" />
+    <ClCompile Include="TRICLINIC_KV_50.cpp" />
     <ClCompile Include="utils.cpp" />
     <ClCompile Include="spectral.cpp" />
     <ClCompile Include="testing.cpp" />

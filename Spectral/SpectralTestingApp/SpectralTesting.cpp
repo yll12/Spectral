@@ -5,6 +5,7 @@
 #include "utils.h"
 #include "ORTHOGONALDISPCYL.h"
 #include "cCode10TriclinicCORRECTED.h"
+#include "TRICLINIC_KV_50.h"
 #include "spectral.h" 
 #include <Eigen/Dense>
 #define _CRTDBG_MAP_ALLOC
@@ -85,7 +86,7 @@ int main()
 	//Code12::Code12Method::code12();
 	//cout << numToStr(1300) <<endl;
 	//Code5Triclinic::Code5TriclinicMethods::code5Triclinic();
-	Code10Triclinic::Code10TriclinicMethods::code10triclinic();
-
+	//Code10Triclinic::Code10TriclinicMethods::code10triclinic();
+	TRICLINIC_KV_50::TRICLINIC_KV_50Methods::TRICLINIC_KV_50();
 	return 0;
 }

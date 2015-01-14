@@ -48,6 +48,9 @@
     <ClInclude Include="ORTHOGONALDISPCYL.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="TRICLINIC_KV_50.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="testing.cpp">
@@ -75,6 +78,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="cCode10TriclinicCORRECTED.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TRICLINIC_KV_50.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
