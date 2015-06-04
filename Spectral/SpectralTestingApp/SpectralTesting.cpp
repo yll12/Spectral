@@ -1,29 +1,11 @@
-#include <iostream>
-#include "Code11.h"
-#include "code12.h"
-#include "code5Triclinic.h"
-#include "utils.h"
-#include "ORTHOGONALDISPCYL.h"
-#include "cCode10TriclinicCORRECTED.h"
 #include "TRICLINIC_KV_50.h"
-#include "spectral.h" 
-#include <Eigen/Dense>
+
 #define _CRTDBG_MAP_ALLOC
-#include <stdlib.h>
-#include <crtdbg.h>
-#include <iomanip>
-#include <ctime> 
-#include <chrono>
-#include <utility>
+#include <string>
+#include <Utils.h>
 
-using namespace std;
-using namespace Eigen;
-using namespace Spectral;
-using namespace Utility;
-
-
-string numToStr(int n) {
-	string str(1, 'a' + n % 26);
+std::string numToStr(int n) {
+	std::string str(1, 'a' + n % 26);
 	n = n / 26;
 	while (n != 0) {
 		str = (char)('a' + (n - 1) % 26) + str;
@@ -38,55 +20,29 @@ int main()
 	// Check Memory leak
 
 	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
-
-	/*
-	int n = 20;
-	int m = 2;
-	
-	auto start = chrono::system_clock::now();
-	DerivativeMatrix result = SpectralMethods::chebdif(n, m);
-	auto end = chrono::system_clock::now();
-
-	for (int i = 0; i < m; i++)
-	{
-		cout << "Here's the matrix dm[" << i << "]: \n" << 
-			setprecision(15) << result.dm[i] << "\n";
-		cout << "Here's the matrix x:\n" << result.x << "\n";
-		ostringstream buffer;
-		buffer << "../../D" << (i + 1) << "cpp.csv";
-		string filename = buffer.str();
-		UtilityMethods::eigenToCSV(result.dm[i], filename);
-	}
-	UtilityMethods::eigenToCSV(result.x, "../../xcpp.csv");
-	auto elapsed = chrono::duration_cast<std::chrono::milliseconds>(end - start);
-
-	cout << "Total time taken is: " << setprecision(15) << elapsed.count() / double(CLOCKS_PER_SEC)
-		<< " seconds" << endl;
-
-	/*
-	ofstream a_file("../../example.txt"); //this creates it. 
-	if (!a_file) {
-		cout << "Cannot open file.\n";
-		return 1;
-	}
-	cout << "Reached here" << endl;
-	a_file << "Hello World!" << endl;
-	a_file.close();
-	*/
-
-
-
-
-	/*
-	cout << "chebdif(" << n << ", " << m  << ")= " << 
-		Spectral::SpectralMethods::chebdif(n, m) << endl;
-	*/
-	//Spectral::SpectralMethods::chebdif(90, 1);
+	Eigen::MatrixXd c = Eigen::MatrixXd::Zero(2, 2);
+	c << 1, 2,
+		3, 4;
+	int G = 2;
+	Eigen::MatrixXcd Q12X(G, G);
+	Eigen::MatrixXcd Q12Y(G, G);
+	Eigen::MatrixXcd Q12Z(G, G);
+	Q12X << 1, 2,
+		3, 4;
+	Q12Y << 5, 6,
+		7, 8;
+	Q12Z << 9, 10,
+		11, 12;
+	std::vector<Eigen::MatrixXcd> Q1(6);
+	Q1[1] = Eigen::MatrixXcd::Zero(G, 3*G);
+	Q1[1] << Q12X, Q12Y, Q12Z;
+	std::cout << Q1[1]<< "\n";
+	std::vector<Eigen::MatrixXcd> T(6);
+	double h = 2;
+	double k = 3;
+	T[1] = (h * k) * Q1[1];
+	std::cout << T[1] << "\n";
 	//Code11::Code11Method::code11();
-	//Code12::Code12Method::code12();
-	//cout << numToStr(1300) <<endl;
-	//Code5Triclinic::Code5TriclinicMethods::code5Triclinic();
-	//Code10Triclinic::Code10TriclinicMethods::code10triclinic();
-	TRICLINIC_KV_50::TRICLINIC_KV_50Methods::TRICLINIC_KV_50();
+	//TRICLINIC_KV_50::TRICLINIC_KV_50Methods::TRICLINIC_KV_50();
 	return 0;
 }

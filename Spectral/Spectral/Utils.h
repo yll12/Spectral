@@ -8,6 +8,7 @@
 #include <iostream>
 #include <iomanip>
 #include <complex>
+#include <vector>
 
 extern "C" void dggev_(const char* JOBVL, const char* JOBVR, const int* N,
 	const double* A, const int* LDA, const double* B, const int* LDB,
@@ -55,6 +56,37 @@ namespace Utility
 
 		// TODO: Comment
 		static bool compare(const double& x, const double& y);
+
+		//! A static method that computes the differentiation
+		//!matrices D1, D2, ..., DM on Chebyshev nodes. \n
+		//!The code implements two strategies for enhanced
+		//!accuracy suggested by W.Don and S.Solomonoff in
+		//!SIAM J.Sci.Comp.Vol. 6, pp. 1253--1268 (1994).
+		//!The two strategies are(a) the use of trigonometric
+		//!identities to avoid the computation of differences
+		//!x(k) - x(j) and(b) the use of the "flipping trick"
+		//!which is necessary since sin t can be computed to high
+		//!relative precision when t is small whereas sin(pi - t) cannot. \n
+		//!
+		//!J.A.C.Weideman, S.C.Reddy 1998.
+		/*!
+		\param n Size of differentiation matrix.
+		\param m Number of derivatives required (integer). \n
+		Note: 0 < m <= n-1.
+		\return pair<Eigen::MatrixXd, std::vector<Eigen::MatrixXd>> x
+				x.first - Chebyshev points.
+				x.second - Vector of differentiation matrices.
+		*/
+		static std::pair<Eigen::MatrixXd, std::vector<Eigen::MatrixXd>> chebdif(int n, int m);
+
+		static Eigen::MatrixXd rotate_YToZ(Eigen::MatrixXd c);
+
+		static Eigen::MatrixXd rotate_YToX(Eigen::MatrixXd c);
+
+		static std::vector<Eigen::MatrixXcd> compute_EOM(Eigen::MatrixXcd D, 
+			Eigen::MatrixXcd N, double h, double k);
+
+		static Eigen::MatrixXd normalise(Eigen::MatrixXd c);
 	};
 
 	template <typename Derived>
@@ -82,46 +114,6 @@ namespace Utility
 	{
 		return x.colwise().reverse().eval();
 	}
-	
-	/*
-	// [V,D] = eig(A,B)
-	template <typename Derived>
-	std::pair<typename Derived, typename Derived> UtilityMethods::matlab_eig(const Derived& A, const Derived& B)
-	{
-		Derived v, lambda;
-
-		int N = A.cols(); // Number of columns of A and B. Number of rows of v.
-
-		v.resize(N, N);
-		lambda.resize(N, 3);
-
-		int LDA = A.outerStride();
-		int LDB = B.outerStride();
-		int LDV = v.outerStride();
-
-		double WORKDUMMY;
-		int LWORK = -1; // Request optimum work size.
-		int INFO = 0;
-
-		double * alphar = const_cast<double*>(lambda.col(0).data());
-		double * alphai = const_cast<double*>(lambda.col(1).data());
-		double * beta = const_cast<double*>(lambda.col(2).data());
-
-		// Get the optimum work size.
-		dggev_("N", "V", &N, A.data(), &LDA, B.data(), &LDB, alphar, alphai, beta, 0, &LDV, v.data(), &LDV, &WORKDUMMY, &LWORK, &INFO);
-
-		LWORK = int(WORKDUMMY) + 32;
-		VectorXd WORK(LWORK);
-
-		dggev_("N", "V", &N, A.data(), &LDA, B.data(), &LDB, alphar, alphai, beta, 0, &LDV, v.data(), &LDV, WORK.data(), &LWORK, &INFO);
-		
-		Derived col1 = lambda.col(0);
-		Derived col3 = lambda.col(2);
-		Derived d = col1.array() / col3.array();
-		
-		return std::make_pair(v, d);
-	}
-	*/
 
 	// [V,D] = eig(A,B)
 	template <typename Derived>
@@ -152,6 +144,47 @@ namespace Utility
 
 		return std::make_pair(v, lambda);
 	}
+
+	// OLD Impementation:
+	/*
+	// [V,D] = eig(A,B)
+	template <typename Derived>
+	std::pair<typename Derived, typename Derived> UtilityMethods::matlab_eig(const Derived& A, const Derived& B)
+	{
+	Derived v, lambda;
+
+	int N = A.cols(); // Number of columns of A and B. Number of rows of v.
+
+	v.resize(N, N);
+	lambda.resize(N, 3);
+
+	int LDA = A.outerStride();
+	int LDB = B.outerStride();
+	int LDV = v.outerStride();
+
+	double WORKDUMMY;
+	int LWORK = -1; // Request optimum work size.
+	int INFO = 0;
+
+	double * alphar = const_cast<double*>(lambda.col(0).data());
+	double * alphai = const_cast<double*>(lambda.col(1).data());
+	double * beta = const_cast<double*>(lambda.col(2).data());
+
+	// Get the optimum work size.
+	dggev_("N", "V", &N, A.data(), &LDA, B.data(), &LDB, alphar, alphai, beta, 0, &LDV, v.data(), &LDV, &WORKDUMMY, &LWORK, &INFO);
+
+	LWORK = int(WORKDUMMY) + 32;
+	VectorXd WORK(LWORK);
+
+	dggev_("N", "V", &N, A.data(), &LDA, B.data(), &LDB, alphar, alphai, beta, 0, &LDV, v.data(), &LDV, WORK.data(), &LWORK, &INFO);
+
+	Derived col1 = lambda.col(0);
+	Derived col3 = lambda.col(2);
+	Derived d = col1.array() / col3.array();
+
+	return std::make_pair(v, d);
+	}
+	*/
 
 }
 

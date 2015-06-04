@@ -1,7 +1,5 @@
 #include "code12.h"
-#include "spectral.h"
 #include "Utils.h"
-#include "derivativeMatrix.h"
 #include <complex>
 #include <Eigen\Dense>
 
@@ -9,7 +7,6 @@
 #include <iostream>
 
 using namespace Eigen;
-using namespace Spectral;
 using namespace std;
 using namespace Utility;
 
@@ -37,15 +34,15 @@ namespace Code12
 
 		int n = 90;
 
-		DerivativeMatrix result = SpectralMethods::chebdif(n, 2);
+		std::pair<Eigen::MatrixXd, std::vector<Eigen::MatrixXd>> result = UtilityMethods::chebdif(n, 2);
 
-		MatrixXcd x = result.x.cast<complex<double>>();
+		MatrixXcd x = result.first.cast<complex<double>>();
 
 		x = x * h;
+		std::vector<Eigen::MatrixXd> dm = result.second;
+		MatrixXcd d1 = pow(h, -1) * dm[0].cast<complex<double>>();
 
-		MatrixXcd d1 = pow(h, -1) * result.dm[0].cast<complex<double>>();
-
-		MatrixXcd d2 = pow(h, -2) * result.dm[1].cast<complex<double>>();
+		MatrixXcd d2 = pow(h, -2) * dm[1].cast<complex<double>>();
 
 		MatrixXcd o = MatrixXcd::Zero(n, n);
 

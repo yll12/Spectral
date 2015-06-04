@@ -1,0 +1,17 @@
+\contentsline {chapter}{\numberline {1}Class Index}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Class List}{1}{section.1.1}
+\contentsline {chapter}{\numberline {2}Class Documentation}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Derivative\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Matrix Class Reference}{3}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Detailed Description}{3}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Member Data Documentation}{3}{subsection.2.1.2}
+\contentsline {subsubsection}{\numberline {2.1.2.1}dm}{3}{subsubsection.2.1.2.1}
+\contentsline {subsubsection}{\numberline {2.1.2.2}x}{3}{subsubsection.2.1.2.2}
+\contentsline {section}{\numberline {2.2}Math\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Funcs\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:My\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Math\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Funcs Class Reference}{3}{section.2.2}
+\contentsline {section}{\numberline {2.3}Spectral\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:Spectral\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Methods Class Reference}{4}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Detailed Description}{4}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Member Function Documentation}{4}{subsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.2.1}chebdif}{4}{subsubsection.2.3.2.1}
+\contentsline {section}{\numberline {2.4}Utility\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:Utility\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Methods Class Reference}{4}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Detailed Description}{5}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Member Function Documentation}{5}{subsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.2.1}Eigen\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}To\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}C\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}V}{5}{subsubsection.2.4.2.1}

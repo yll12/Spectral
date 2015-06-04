@@ -1,7 +1,5 @@
 #include "code5Triclinic.h"
-#include "spectral.h"
 #include "Utils.h"
-#include "derivativeMatrix.h"
 #include <complex>
 #include <Eigen\Dense>
 
@@ -9,7 +7,6 @@
 #include <iostream>
 
 using namespace Eigen;
-using namespace Spectral;
 using namespace std;
 using namespace Utility;
 
@@ -49,14 +46,14 @@ namespace Code5Triclinic
 
 		int n = 90;
 
-		DerivativeMatrix result = SpectralMethods::chebdif(n, 2);
+		std::pair<Eigen::MatrixXd, std::vector<Eigen::MatrixXd>> result = UtilityMethods::chebdif(n, 2);
 
-		MatrixXcd x = result.x.cast<complex<double>>();
+		MatrixXcd x = result.first.cast<complex<double>>();
 
 		x = x * h;
-
-		MatrixXcd d1 = pow(h, -1) * result.dm[0].cast<complex<double>>();
-		MatrixXcd d2 = pow(h, -2) * result.dm[1].cast<complex<double>>();
+		std::vector<Eigen::MatrixXd> dm = result.second;
+		MatrixXcd d1 = pow(h, -1) * dm[0].cast<complex<double>>();
+		MatrixXcd d2 = pow(h, -2) * dm[1].cast<complex<double>>();
 
 		MatrixXcd o = MatrixXcd::Zero(n, n);
 
@@ -156,25 +153,16 @@ namespace Code5Triclinic
 			MatrixXd p_(3 * n, steps);
 			p_.col(m) = w.col(0);
 			int q = 0;
-			
+
 			for (int i = 0; i < 2 * n; i++)
 			{
-				if (p_(i, m) != 0) 
+				if (p_(i, m) != 0)
 				{
 					W(q, m) = p_(i, m);
 					q++;
 				}
 			}
-			
-		UtilityMethods::eigenToCSV(W.col(m), "../../bigw5cpp_n90.csv");
 		}
-
-		
-		//UtilityMethods::eigenToCSV(p, "../../p5cpp_n120.csv");
-		//UtilityMethods::eigenToCSV(e, "../../e5cpp_n120.csv");
-		//UtilityMethods::eigenToCSV(w, "../../w5cpp_n120.csv");
-
-
 	}
 
 }

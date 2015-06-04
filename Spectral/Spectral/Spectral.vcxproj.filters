@@ -18,15 +18,6 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="testing.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="spectral.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="derivativeMatrix.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Code11.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -53,16 +44,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="testing.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="spectral.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="code11.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="utils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="code12.cpp">
@@ -81,6 +63,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="TRICLINIC_KV_50.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,7 +1,5 @@
 #include "ORTHOGONALDISPCYL_SH.h"
-#include "spectral.h"
 #include "Utils.h"
-#include "derivativeMatrix.h"
 #include <complex>
 #include <Eigen\Dense>
 
@@ -9,7 +7,6 @@
 #include <iostream>
 
 using namespace Eigen;
-using namespace Spectral;
 using namespace std;
 using namespace Utility;
 
@@ -38,9 +35,9 @@ namespace OrthogonalDispcylsh
 
 		double vt = sqrt(c(5, 5) / rho);
 
-		DerivativeMatrix result = SpectralMethods::chebdif(n, 2);
+		std::pair<Eigen::MatrixXd, std::vector<Eigen::MatrixXd>> result = UtilityMethods::chebdif(n, 2);
 
-		MatrixXd x = result.x;
+		MatrixXd x = result.first;
 
 		double h = b - a;
 
@@ -54,8 +51,9 @@ namespace OrthogonalDispcylsh
 
 		MatrixXd r = (h * x + a_temp + b_temp) / 2;
 
-		MatrixXd d1 = (2 / h) * result.dm[0];
-		MatrixXd d2 = pow((2 / h), 2) * result.dm[1];
+		std::vector<Eigen::MatrixXd> dm = result.second;
+		MatrixXd d1 = (2 / h) * dm[0];
+		MatrixXd d2 = pow((2 / h), 2) * dm[1];
 
 		MatrixXd o = MatrixXd::Zero(n, n);
 

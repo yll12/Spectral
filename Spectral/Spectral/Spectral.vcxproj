@@ -82,7 +82,6 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="derivativeMatrix.h" />
     <ClInclude Include="Code11.h" />
     <ClInclude Include="code12.h" />
     <ClInclude Include="code5Triclinic.h" />
@@ -91,8 +90,6 @@
     <ClInclude Include="ORTHOGONALDISPCYL_SH.h" />
     <ClInclude Include="ORTHOGONALDISPCYL.h" />
     <ClInclude Include="Utils.h" />
-    <ClInclude Include="spectral.h" />
-    <ClInclude Include="testing.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="cCode10TriclinicCORRECTED.cpp" />
@@ -102,9 +99,7 @@
     <ClCompile Include="ORTHOGONALDISPCYL_SH.cpp" />
     <ClCompile Include="ORTHOGONALDISPCYL.cpp" />
     <ClCompile Include="TRICLINIC_KV_50.cpp" />
-    <ClCompile Include="utils.cpp" />
-    <ClCompile Include="spectral.cpp" />
-    <ClCompile Include="testing.cpp" />
+    <ClCompile Include="Utils.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

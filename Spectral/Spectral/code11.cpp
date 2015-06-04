@@ -1,7 +1,5 @@
 #include "code11.h"
-#include "spectral.h"
-#include "derivativeMatrix.h"
-#include "utils.h"
+#include "Utils.h"
 #include <Eigen\Dense>
 #include <Eigen\Eigenvalues>
 #include <cmath>
@@ -12,7 +10,6 @@
 
 using namespace Utility;
 using namespace Eigen;
-using namespace Spectral;
 using namespace std;
 
 // Testing
@@ -44,14 +41,14 @@ namespace Code11
 
 		int n = 90;
 
-		DerivativeMatrix result = SpectralMethods::chebdif(n, 2);
+		std::pair<Eigen::MatrixXd, std::vector<Eigen::MatrixXd>> result = UtilityMethods::chebdif(n, 2);
 
-		MatrixXd x = result.x;
+		MatrixXd x = result.first;
 
 		x = (x.array() + 1).matrix() * (h / 2);
-
-		MatrixXd d1 = pow((h / 2), -1)*result.dm[0];
-		MatrixXd d2 = pow((h / 2), -2)*result.dm[1];
+		std::vector<Eigen::MatrixXd> dm = result.second;
+		MatrixXd d1 = pow((h / 2), -1) * dm[0];
+		MatrixXd d2 = pow((h / 2), -2) * dm[1];
 
 		MatrixXd o = MatrixXd::Zero(n, n);
 
@@ -94,15 +91,11 @@ namespace Code11
 		l.row(0) = s.row(0);
 		l.row(n - 1) = s.row(n - 1);
 
-		UtilityMethods::eigenToCSV(l, "../../l11cpp_n90.csv");
-
 		MatrixXd m2 = MatrixXd::Identity(n, n);
 		
 		m2 *= -rho;
 		m2(0, 0) = 0;
 		m2(n - 1, n - 1) = 0;
-
-		UtilityMethods::eigenToCSV(m2, "../../m2_11cpp_n90.csv");
 
 		pair<MatrixXcd, MatrixXcd> eigs = Utility::UtilityMethods::matlab_eig(l, m2);
 
@@ -112,10 +105,6 @@ namespace Code11
 		MatrixXd w = e.cwiseSqrt();
 
 		std::sort(w.data(), w.data() + w.size());
-
-		UtilityMethods::eigenToCSV(p, "../../p11cpp_n90.csv");
-		UtilityMethods::eigenToCSV(e, "../../e11cpp_n90.csv");
-		UtilityMethods::eigenToCSV(w, "../../w11cpp_n90.csv");
 
 		MatrixXd p_(n, steps);
 		p_.col(m) = w.col(0);
@@ -129,12 +118,8 @@ namespace Code11
 				q++;
 			}
 		}
-
-		UtilityMethods::eigenToCSV(W.col(m), "../../bigw11cpp_n90.csv");
-
-		//UtilityMethods::eigenToCSV(p, "../../p11cpp_n10.csv");
-		//UtilityMethods::eigenToCSV(e, "../../e11cpp_n10.csv");
-		//UtilityMethods::eigenToCSV(w, "../../w11cpp_n10.csv");
+		std::cout << "x:\n";
+		std::cout << x;
 
 	}
 
